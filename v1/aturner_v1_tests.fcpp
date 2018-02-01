@@ -1,55 +1,48 @@
-7+5?
 --Case Name: Addition
 --Author: Asa Spades Turner
 --Output:
 -- 12
 --End Output:
+7+5?
 
-ifz 10-9 then 5+1 else 5-1?
 --Case Name: Ifz
---Author: Asa Spades Turner
 --Output:
 -- 4
 --End Output:
+ifz 10-9 then 5+1 else 5-1?
 
-(5.0 / 10.0) + ((~4.8) // 10)?
 --Case Name: Rounding vs Integer Division
---Author: Asa Spades Turner
 --Output:
 -- 0.5
 --End Output:
+(5.0 / 10.0) + ((~4.8) // 10)?
 
-life / pi?
 --Case Name: Life of Pie
---Author: Asa Spades Turner
 --Output:
 -- 13.36901521971921
 --End Output:
+life / pi?
 
-pi - 3?
 --Case Name: Life of Pie
---Author: Asa Spades Turner
 --Output:
 -- 0.14159265358979312
 --End Output:
+pi - 3?
 
-fogarE * 2?
---Case Name: Does fogarE multiply?
---Author: Asa Spades Turner
+--Case Name: Does fogarte multiply?
 --Output:
 -- 5.43656365691809
 --End Output:
+fogarte * 2?
 
--5?
 --Case Name: Sad Five
---Author: Asa Spades Turner
 --Output:
 -- -5
 --End Output:
+-5?
 
-5 - (-5)?
---Case Name: 
---Author: Asa Spades Turner
+--Case Name: Subtraction
 --Output:
 -- 10
 --End Output:
+5 - (-5)?

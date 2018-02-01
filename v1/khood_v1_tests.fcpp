@@ -1,27 +1,27 @@
-100 + (-58)?
-Case Name: Addition after Negation
+--Case Name: Addition after Negation
 --Author: Kayla Hood
 --Output:
 -- 42
 --End Output:
+100 + (-58)?
 
-ifz (~(-0.1)) then 42 else -100?
 --Case Name: Not Below Zero
 --Author: Kayla Hood
 --Output:
 -- 42
 --End Output:
+ifz (~(-0.1)) then 42 else -100?
 
-100 % 58?
 --Case Name: Modulo
 --Author: Kayla Hood
 --Output:
 -- 42
 --End Output:
+100 % 58?
 
-~((life / (20 + (-10))) * (~((~pi) / 0.5)) + 16.8)
 --Case Name: Life is Complicated
 --Author: Kayla Hood
 --Output:
 -- 42
 --End Output:
+~((life / (20 + (-10))) * (~((~pi) / 0.5)) + 16.8)?
