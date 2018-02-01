@@ -1,0 +1,30 @@
+7+8
+--Case Name: add
+--Author: Benjamin Herrick
+--Output:
+-- 15
+--End Output:
+(2+3)*4
+--Case Name: multiply stuff
+--Author: Benjamin Herrick
+--Output:
+-- 20
+--End Output:
+(8-4)/(1+1)
+--Case Name: divide stuff
+--Author: Benjamin Herrick
+--Output:
+-- 2
+--End Output:
+life%(8/2)
+--Case Name: life
+--Author: Benjamin Herrick
+--Output:
+-- 2
+--End Output:
+ifz(((8+4)*2)%((6+9)/3)) then 0 else 1
+--Case Name: add
+--Author: Benjamin Herrick
+--Output:
+-- 1
+--End Output:
