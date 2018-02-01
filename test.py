@@ -73,11 +73,11 @@ for fname in files:
   # Parse the input file into input and output lists, also grab the case name
   in_output = False
   for line in file:
-   if line.startswith("--Case Name: "):
+   if line.startswith("--Case Name"):
      case = line[13:].strip()
    elif line.startswith("--Output:"):
      in_output = True
-   elif line.startswith("--End Output:"):
+   elif line.startswith("--End Output"):
      in_output = False
    elif line.startswith("--") and in_output:
      tmp = line[2:]
@@ -94,17 +94,17 @@ for fname in files:
     print "Warning: More lines output that specified in file."
   for i in range(0, len(output)):
     if i >= len(out):
-      print "Test case ", casenames[i], " missing on output " , i, ", expected ", output[i], "."
+      print "Test case ", casenames[i], " missing on output " , i, ", expected ", output[i]+ "."
     elif not output[i] == out[i].strip():
       if wrong == 0:
-        print "Errors in file ", fname
+        print "On File", os.path.basename(fname)
       wrong += 1
       anywrong = True
-      print "Test case", casenames[i], "wrong on output " , i, ", expected ", output[i], " but got  ", out[i].strip(), "."
+      print "Test case", casenames[i], "wrong on output" , str(i) + ", expected", output[i], "but got", out[i].strip()+ "."
   if wrong > 0:
-    print "Test case " + casenames[i] + " wrong on",wrong,"cases."
+    print "Test case", casenames[i], "wrong on",wrong,"cases."
   elif options.verbose:
-    print "Test case " + casenames[i] + " correct!"
+    print "Test case",  casenames[i], "correct!"
 
 if not anywrong:
   print "All test cases passed succesfully!"
