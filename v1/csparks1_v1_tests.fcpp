@@ -1,0 +1,28 @@
+--Author: Ray Sparks
+
+--Case Name: addition and subtraction and parenthesis
+--Output:
+-- 13
+-- 7
+12 - 2 + 3
+12 - (2 + 3)?
+
+--Case Name: division
+-- 2.5
+10.0 / 4.0?
+
+--Case Name: ifz-then-else, integer division, exponentiation, easily flip to negation
+-- 9
+ifz 0 then (7//2)^2 else -1?
+
+--Case Name: const life, modulo, rounding
+-- 2
+-- 4
+life % 10?
+~(4.4)?
+
+--Case Name: complex statement testing
+-- 2
+ifz ((8 * 3 - 3) // 7 + 1 * 2 - 5) then -2 + 4 * (-1)^2 else -2?
+
+--End Output:
