@@ -5,8 +5,8 @@ Case Name: Addition after Negation
 -- 42
 --End Output:
 
-ifz (-1) then 42 else -100?
---Case Name: Negatives are True
+ifz (~(-0.1)) then 42 else -100?
+--Case Name: Not Below Zero
 --Author: Kayla Hood
 --Output:
 -- 42
