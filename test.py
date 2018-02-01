@@ -68,38 +68,43 @@ anywrong = False
 for fname in files:
   file = open(fname, "r")
   case = "Undefined"
-  input = []
   output = []
+  casenames = []
   # Parse the input file into input and output lists, also grab the case name
   in_output = False
   for line in file:
    if line.startswith("--Case Name: "):
-     case = line[13:]
+     case = line[13:].strip()
    elif line.startswith("--Output:"):
      in_output = True
    elif line.startswith("--End Output:"):
      in_output = False
    elif line.startswith("--") and in_output:
-     output.append(line[2:])
+     tmp = line[2:]
+     if tmp is not None:
+        output.append(tmp.strip())
+        casenames.append(case)
   file.close
   file = open(fname, "r")
   # Perform all the calculations and compare them to the expected output
   p = subprocess.Popen(("./" + interp_name), stdin=file, stdout=PIPE, stderr=STDOUT)
-  out = p.communicate(input="\n".join(input))[0].splitlines()
+  out = p.communicate()[0].splitlines()
   wrong = 0
   if len(out) > len(output):
     print "Warning: More lines output that specified in file."
   for i in range(0, len(output)):
     if i >= len(out):
-      print "Test case ", case.strip(), " missing on output " , i, ", expected ", output[i].strip(), "."
-    elif not output[i].strip() == out[i].strip():
+      print "Test case ", casenames[i], " missing on output " , i, ", expected ", output[i], "."
+    elif not output[i] == out[i].strip():
+      if wrong == 0:
+        print "Errors in file ", fname
       wrong += 1
       anywrong = True
-      print "Test case ", case.strip(), " wrong on output " , i, ", expected ", output[i].strip(), " but got  ", out[i].strip(), "."
+      print "Test case", casenames[i], "wrong on output " , i, ", expected ", output[i], " but got  ", out[i].strip(), "."
   if wrong > 0:
-    print "Test case " + case.strip() + " wrong on",wrong,"cases."
+    print "Test case " + casenames[i] + " wrong on",wrong,"cases."
   elif options.verbose:
-    print "Test case " + case.strip() + " correct!"
+    print "Test case " + casenames[i] + " correct!"
 
 if not anywrong:
   print "All test cases passed succesfully!"
