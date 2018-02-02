@@ -1,0 +1,44 @@
+-- Case Name: Easy Arithmatic
+-- Author: Nathaniel Pigott
+-- Output:
+-- 24
+-- -3
+-- 12
+-- 0.25
+-- End Output
+19 + 5
+5 - 8
+3 * 4
+1.0 / 4.0
+
+-- Case Name: Multi Arithmatic
+-- Author: Nathaniel Pigott
+-- Output:
+-- 701
+-- 10
+-- End Output
+100 + 100 + 100 + 100 + 100 + 100 + 100 + 1
+(5 + 8) - 1001 / 1001 - 2 * (1 * 0) - 2 * 1
+
+-- Case Name: ifz then
+-- Author: Nathaniel Pigott
+-- Output:
+-- 1
+-- End Output
+ifz (99 * 100) then 2 + 23 else (99 - 98)
+
+-- Case Name: Rounding
+-- Author: Nathaniel Pigott
+-- Output:
+-- 2
+-- 0
+-- End Output
+~2.1034
+~100.23 % ~9.981
+
+-- Case Name: Constants
+-- Author: Nathaniel Pigott
+-- Output:
+-- 45
+-- End Output
+life + pi / pi + fogarte / fogarte + tau / tau
