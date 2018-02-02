@@ -1,0 +1,37 @@
+-- Case Name: Arithmetic
+-- Author: Stephen Chang
+-- Output:
+-- 100
+-- 2
+-- 20
+-- End Output:
+79 + 21?
+32 % 3?
+100 / 5?
+
+-- Case Name: ifz then else
+-- Author: Stephen Chang
+-- Output:
+-- 2
+-- 1
+-- End Output:
+ifz 23 then 1 else 2?
+ifz 0 then 1 else 2?
+
+-- Case Name: unaries and constants
+-- Author: Stephen Chang
+-- Output:
+-- 3
+-- -42
+-- -6
+-- End Output:
+~pi?
+-life?
+-~tau?
+
+-- Case Name: Complex expression
+-- Author: Stephen Chang
+-- Output:
+-- 6
+-- End Output:
+ifz 32 % 4 then ~fogarte + ~pi else ifz 18 then -1 else ifz 3 / 10 then 100 else 2^8

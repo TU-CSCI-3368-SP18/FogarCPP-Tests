@@ -1,0 +1,35 @@
+-- Case Name: Addition
+-- Author: Thoai Bui
+-- Output:
+-- 4
+-- End Output
+2 + 2
+
+
+-- Case Name: Subtraction
+-- Author: Thoai Bui
+-- Output:
+-- 3
+-- End Output
+4 - 1
+
+-- Case Name: Round addition
+-- Author: Thoai Bui
+-- Output:
+-- 19
+-- End Output
+~9.3 + ~10.4
+
+-- Case Name: ifz then
+-- Author: Thoai Bui
+-- Output:
+-- 69
+-- End Output
+ifz (9 + 10) then 10 else (3 * 23)
+
+-- Case Name: Simple math
+-- Author: Thoai Bui
+-- Output:
+-- 96
+-- End Output
+70 + (-3) + (~129.49) % 100
