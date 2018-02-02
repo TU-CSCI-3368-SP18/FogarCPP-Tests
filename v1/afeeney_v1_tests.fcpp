@@ -1,0 +1,50 @@
+
+
+-- Case Name: Round Pi !
+-- Author: Arthur Feeney
+-- Output:
+-- 3
+-- End Output
+
+~pi?
+
+-- Case Name: Round Negative Double
+-- Author: Arthur Feeney
+-- Output:
+-- -62
+-- End Output
+
+~-62.3?
+
+-- Case Name: Simple ifz
+-- Author: Arthur Feeney
+-- Output:
+-- 16
+-- End Output:
+
+if 0 then 16?
+
+-- Case Name: Nested ifz
+-- Author: Arthur Feeney
+-- Output:
+-- 1
+-- End Output
+
+ifz 5 + 5 then 2 else ifz 5 + 4 then 3 else 1?
+
+-- Case Name: nested math stuff
+-- Author Arthur Feeney
+-- Output:
+-- -14684
+-- End Output
+
+((5 + 5) / 2) * 20 - 4 + 11 - (68 * 219) + 1?
+
+
+-- Case Name: Ultra Nested ifz
+-- Author: Arthur Feeney
+-- Output:
+-- 1
+-- End Output
+
+ifz -5.5 + ~5.5 then 2 else ifz 5 + 4 then 3 else ifz 0 then 1?
