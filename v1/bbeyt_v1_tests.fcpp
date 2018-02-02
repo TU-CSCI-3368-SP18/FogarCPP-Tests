@@ -1,0 +1,18 @@
+--Case Name: Integer Arithmetic Operations
+--Author: Benjamin Beyt
+--Output:
+--25
+--End Output:
+(2*3-4//(2+1))^2?
+--Case Name: Real Arithmetic Operations
+--Author: Benjamin Beyt
+--Output:
+--1.0
+--End Output:
+(2.5-2)/~1.234*2.0?
+--Case Name: ifz
+--Author: Benjamin Beyt
+--Output:
+--8
+--End Output:
+ifz 1-1 then 2^3 else 0-1
