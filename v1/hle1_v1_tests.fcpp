@@ -1,0 +1,36 @@
+--Case Name: Simple Calc 
+--Author: Hoang Le
+--Output:
+-- 12
+-- 32
+--End Output
+25-13?
+4+28?
+
+--Case Name: Rounding Tau
+--Author: Hoang Le
+--Output:
+-- 6
+--End Output
+2*tau?
+
+--Case Name: ifz
+--Author: Hoang Le
+--Output:
+-- 999
+--End Output
+ifz (1+1) then (2*3) else 999?
+
+--Case Name: Integer division
+--Author: Hoang Le
+--Output:
+-- 1
+--End Output
+32//24?
+
+--Case Name: Complex Exp
+--Author: Hoang Le
+--Output:
+-- 3
+--End Output
+ifz (25%3) then (2^3) else ifz (-20+20) then ~pi else fogarte?
