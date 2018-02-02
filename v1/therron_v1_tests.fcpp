@@ -1,0 +1,31 @@
+--Author: Tyler Herron
+
+--Case Name: Roughly The Life of Pi
+--Output:
+-- 13
+-- End Output:
+~(life/pi)?
+
+--Case Name: Fogart3
+--Output:
+-- 0
+-- End Output:
+ifz (fogarte-fogarte) then 4%4 else 10%9?
+
+--Case Name: leetcode
+--Output:
+-- 1337
+-- End Output:
+(1*(3^3))^7-10460351866%~104603518665.01?
+
+--Case Name: Dancing in Madness
+--Output:
+-- 7.7
+-- End Output:
+7.7+8//3^2-~3.4*0?
+
+--Case Name: Into Nothing
+--Output:
+-- 0
+-- End Output:
+ifz (-1+1-1+1)^1 then (ifz 0.1 then life else ~(1/life)) else life
