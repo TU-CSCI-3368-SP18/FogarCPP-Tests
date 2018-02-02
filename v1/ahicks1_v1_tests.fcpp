@@ -1,0 +1,26 @@
+--Case Name: Order of operations
+--Author: Alexander Hicks
+--Output:
+-- 16
+--End Output:
+3 * 2 ^ 2 + 1 * (1+3)?
+
+--Case Name: True or False
+--Output:
+-- 0
+--End Output:
+ifz (4 % 2) then 0 else 1?
+
+--Case Name: A constant life truth
+--Output:
+-- 6
+-- 42
+--End Output:
+(~pi) + (~tau) // 2?
+ifz (3 ^ 2) then 69 else life?
+
+--Case Name: True or False
+--Output:
+-- 25.8
+--End Output:
+1 * 2 * 3 * 4.3?
