@@ -1,0 +1,34 @@
+--Case Name
+--Author: Brian Wongchotigul
+--Output:
+-- -1
+--End Output:
+-(100*(20-20)+1)?
+
+--Case Name
+--Author: Brian Wongchotigul
+--Output:
+-- 35
+--End Output:
+(23%5)+32?
+
+--Case Name
+--Author: Brian Wongchotigul
+--Output:
+-- 3
+--End Output:
+ifz (3*0) then 3 else 4?
+
+--Case Name
+--Author: Brian Wongchotigul
+--Output:
+-- 0
+--End Output:
+ifz (~fogarte) then 0 else 2?
+
+--Case Name
+--Author: Brian Wongchotigul
+--Output:
+-- 46225
+--End Output:
+43*43*(65-40)?
