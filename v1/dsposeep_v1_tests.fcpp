@@ -1,0 +1,46 @@
+--Case Name: Add
+--Author: Drew Sposeep
+--Output: 
+--15
+--0
+--4
+--End output
+5 + 10?
+0 + 0?
+(-1)+5?
+
+--Case Name: Constant Check
+--Author: Drew Sposeep
+--Output: 
+--54
+--End output
+~(life + pi + fogartE + tau)?
+
+
+--Case Name: Complex Expression
+--Author: Drew Sposeep
+--Output: 
+--6 
+--End output
+((8-3)+(4*2))/(10%(4+4))?
+
+
+--Case Name: If-Then-Else Test
+--Author: Drew Sposeep
+--Output: 
+--5
+--4
+--End output
+ifz (10-9) then 4 else 5?
+ifz(1-1) then 4 else 5?
+
+--Case Name: Integer Division
+--Author: Drew Sposeep
+--Output: 
+--0
+--4
+--1
+--End output
+1//5?
+14//3?
+6//5?
