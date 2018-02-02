@@ -1,0 +1,70 @@
+--Case Name: Addition 
+--Author: Ian Witecki
+--Output:
+-- 20
+-- 1
+-- 5.5
+-- 5
+-- 200.55
+--End Output:
+10 +10?
+3+ (-2)?
+3.3 +2.2?
+3.5+1.5?
+100 + 100.55?
+
+
+--Case Name: Multiplication 
+--Author: Ian Witecki
+--Output:
+-- 100
+-- 6
+-- 4.5
+-- 19.38
+-- 200.55
+--End Output:
+10*10?
+3* 2?
+3 * 1.5?
+7.6*2.55?
+
+
+--Case Name: If subtraction then int division
+--Author: Ian Witecki
+--Output:
+-- 10
+--End Output:
+ifz (3-10) then 10//5 else 20//2?
+
+
+--Case Name: Exponents
+--Author: Ian Witecki
+--Output:
+-- 1024
+-- 100
+--End Output:
+2^10?
+10^2?
+
+--Case Name: Exponential Rounding
+--Author: Ian Witecki
+--Output:
+-- 0
+--End Output:
+((~9.6)^2) - 10^(~1.6)?
+
+
+--Case Name: Modulo and More
+--Author: Ian Witecki
+--Output:
+-- 68.4955592154    
+--End Output:
+((((10%55) // 2) + 25) / 2.5) * (((~4.8) * pi) - 10)?
+
+
+--Case Name: Negative pi
+--Author: Ian Witecki
+--Output:
+-- -3.14159265358979312
+--End Output:
+-pi?
