@@ -1,9 +1,9 @@
 --Case Name: Lots of Math
 --Author: Morgan King
 --Output:
--- 0 
+-- 8 
 -- 8.539734222673566
 --End Output
 
-((7 + 3 + 10) * 5 - 20 / 10) % 10?
+~((7 + 3 + 10) * 5 - 20 / 10) % 10?
 fogarte * pi?

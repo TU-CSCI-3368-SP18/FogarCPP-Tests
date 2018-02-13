@@ -4,7 +4,7 @@
 -- 20
 -- 1
 -- 5.5
--- 5
+-- 5.0
 -- 200.55
 --End Output:
 10 +10?
@@ -21,7 +21,6 @@
 -- 6
 -- 4.5
 -- 19.38
--- 200.55
 --End Output:
 10*10?
 3* 2?
@@ -57,14 +56,14 @@ ifz (3-10) then 10//5 else 20//2?
 --Case Name: Modulo and More
 --Author: Ian Witecki
 --Output:
--- 68.4955592154    
+-- 68
 --End Output:
-((((10%55) // 2) + 25) / 2.5) * (((~4.8) * pi) - 10)?
+~(((((10%55) // 2) + 25) / 2.5) * (((~4.8) * pi) - 10))?
 
 
 --Case Name: Negative pi
 --Author: Ian Witecki
 --Output:
--- -3.14159265358979312
+-- -314159
 --End Output:
--pi?
+~(-pi*100000)?

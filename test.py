@@ -73,11 +73,11 @@ for fname in files:
   # Parse the input file into input and output lists, also grab the case name
   in_output = False
   for line in file:
-   if line.startswith("--Case Name"):
+   if line.lower().startswith("--case name") or line.lower().startswith("-- case name"):
      case = line[13:].strip()
-   elif line.startswith("--Output:"):
+   elif line.lower().startswith("--output:") or  line.lower().startswith("-- output:"):
      in_output = True
-   elif line.startswith("--End Output"):
+   elif line.lower().startswith("--end output") or line.lower().startswith("-- end output"):
      in_output = False
    elif line.startswith("--") and in_output:
      tmp = line[2:]
@@ -91,16 +91,16 @@ for fname in files:
   out = p.communicate()[0].splitlines()
   wrong = 0
   if len(out) > len(output):
-    print "Warning: More lines output that specified in file."
+    print "Warning: More lines output", len(out), "than specified", len(output), "in file: ", os.path.basename(fname)
   for i in range(0, len(output)):
     if i >= len(out):
-      print "Test case ", casenames[i], " missing on output " , i, ", expected ", output[i]+ "."
+      print "Test case ", casenames[i], " missing on output " , i+1, ", expected ", output[i]+ "."
     elif not output[i] == out[i].strip():
       if wrong == 0:
         print "On File", os.path.basename(fname)
       wrong += 1
       anywrong = True
-      print "Test case", casenames[i], "wrong on output" , str(i) + ", expected", output[i], "but got", out[i].strip()+ "."
+      print "Test case", casenames[i], "wrong on output" , str(i+1) + ", expected", output[i], "but got", out[i].strip()+ "."
   if wrong > 0:
     print "Test case", casenames[i], "wrong on",wrong,"cases."
   elif options.verbose:

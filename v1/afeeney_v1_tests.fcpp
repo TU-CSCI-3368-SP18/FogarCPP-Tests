@@ -22,7 +22,7 @@
 -- 16
 -- End Output:
 
-if 0 then 16?
+ifz 0 then 16 else 7?
 
 -- Case Name: Nested ifz
 -- Author: Arthur Feeney
@@ -35,10 +35,10 @@ ifz 5 + 5 then 2 else ifz 5 + 4 then 3 else 1?
 -- Case Name: nested math stuff
 -- Author Arthur Feeney
 -- Output:
--- -14684
+-- -14784
 -- End Output
 
-((5 + 5) / 2) * 20 - 4 + 11 - (68 * 219) + 1?
+((5 + 5) // 2) * 20 - 4 + 11 - (68 * 219) + 1?
 
 
 -- Case Name: Ultra Nested ifz
@@ -47,4 +47,4 @@ ifz 5 + 5 then 2 else ifz 5 + 4 then 3 else 1?
 -- 1
 -- End Output
 
-ifz -5.5 + ~5.5 then 2 else ifz 5 + 4 then 3 else ifz 0 then 1?
+ifz -5.5 + ~5.5 then 2 else ifz 5 + (-5) then ifz 0 then 1 else 5 else 2?

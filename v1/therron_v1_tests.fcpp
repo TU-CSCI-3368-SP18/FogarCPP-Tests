@@ -28,4 +28,4 @@ ifz (fogarte-fogarte) then 4%4 else 10%9?
 --Output:
 -- 0
 -- End Output:
-ifz (-1+1-1+1)^1 then (ifz 0.1 then life else ~(1/life)) else life
+ifz (-1+1-1+1)^1 then (ifz 0.1 then life else ~(1/life)) else life?

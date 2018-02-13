@@ -20,7 +20,7 @@
 --Case Name: Complex Expression
 --Author: Drew Sposeep
 --Output: 
---6 
+--6.5
 --End output
 ((8-3)+(4*2))/(10%(4+4))?
 

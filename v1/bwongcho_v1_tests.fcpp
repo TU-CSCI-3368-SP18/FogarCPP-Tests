@@ -24,7 +24,7 @@ ifz (3*0) then 3 else 4?
 --Output:
 -- 0
 --End Output:
-ifz (~fogarte) then 0 else 2?
+ifz (~fogarte)-3 then 0 else 2?
 
 --Case Name
 --Author: Brian Wongchotigul

@@ -21,6 +21,6 @@ ifz (3 ^ 2) then 69 else life?
 
 --Case Name: True or False
 --Output:
--- 25.8
+-- 26
 --End Output:
-1 * 2 * 3 * 4.3?
+~(1 * 2 * 3 * 4.3)?
