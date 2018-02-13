@@ -34,4 +34,4 @@ ifz 0 then 1 else 2?
 -- Output:
 -- 6
 -- End Output:
-ifz 32 % 4 then ~fogarte + ~pi else ifz 18 then -1 else ifz 3 / 10 then 100 else 2^8
+ifz 32 % 4 then ~fogarte + ~pi else ifz 18 then -1 else ifz 3 / 10 then 100 else 2^8?
