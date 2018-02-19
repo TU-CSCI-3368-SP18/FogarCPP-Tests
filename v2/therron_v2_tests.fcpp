@@ -1,0 +1,28 @@
+--Author: Tyler Herron
+--Case Name: The Birthday Boy
+--Output: Good job, and happy birthday!
+
+-- Var declarations
+sir month the "june"                    -- "june"
+sir day the 2 - 0.3                     -- 1.7
+sir rightAnswer the Knave               -- "Knave" = false
+
+-- Place declarations
+sir ten the 10^1
+sir hundred the 10^2
+
+sir year the (1900//100 + 1*0.97) of    -- 19.97
+    if (not rightAnswer) then
+        if (month != "july") then month = july
+        ifz (day - 17) then rightAnswer = Knight
+                       else day = day * ten
+        if (year <= 1997) then rightAnswer = Knight
+                          else year = (year * hundred) // 1
+
+
+sir proceed the Knight
+ifz (10 % 5) then proceed = Knight
+             else "Something went bad."
+if(both rightAnswer proceed)
+    then "Good job, and happy birthday!"
+    else "Bad job. Try again."
