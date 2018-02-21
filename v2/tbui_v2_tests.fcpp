@@ -1,0 +1,19 @@
+--Author: Thoai Bui
+--Case Name: some fib
+--Output: "Hurray,"
+
+sir first the 1?
+sir second the 1?
+sir third the (first + second)?  --2
+
+if (first < 2)
+then (fourth = third + second)   --3
+else (fourth = first + second + third)
+
+sir answer the (if (both (fourth < 4) (fourth > 1)) 
+then (sir sixth the (fourth * 2 + third) lord of (sixth + fourth + third)) -- 8 + 5 = 13
+else ("Uh uh, I made some mistakes along the way") )
+
+if (answer != "uh uh, I made some mistakes along the way")
+then "Hurray,"             
+else "I suck"?
