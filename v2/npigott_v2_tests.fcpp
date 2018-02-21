@@ -1,0 +1,21 @@
+--Author: Nathaniel Pigott
+--Case Name: Pass/Fail
+--Output: you passed!
+
+sir test1 the 79 ?
+sir test2 the 90 ?
+sir test3 the 81 ?
+
+sir assignment1 the 99 ?
+sir assignment2 the 87 ?
+sir assignment3 the 100 ?
+
+sir testAvg the (test1 + test2 + test3)/3 ?
+sir assignmentAvg the (assignment1 + assignment2 + assignment3)/3 ?
+
+sir pass the "you passed!" ?
+sir fail the "you failed :(" ?
+
+sir quizGrade the (100+67+88+73+90+93)/6 lord of (quizGrade + (95+83+87)/3)/2 ?
+
+if(both (testAvg >= 70) (assignmentAvg >= 10)) then pass else fail ?
