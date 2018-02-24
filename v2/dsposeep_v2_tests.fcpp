@@ -1,0 +1,46 @@
+--Case Name: V2 test program
+--Author: Drew Sposeep
+--Output: 
+--foo
+--bar
+--0
+--10
+--knight
+--knave
+--knave
+--knight
+-- -3
+--0.891081
+--99
+--knight
+--knave
+--knight
+--End output
+
+sir foo of "foo"?
+sir bar of "bar"?
+sir start of 0?
+sir end of 10?
+sir good of (both (2^5 = 32) (one knight knave))?
+sir bad of (one (both (7%5 = 2) (~pi > 3)) (if good then (both knight knave) else (not knave))?
+
+if foo = bar then bad else good?
+if bar != bar then bad else good?
+
+sir tmp the 5 of ((((tmp-3)^4)%3 + tmp)/3) * ((start-5)/2) - ((-1*end)//5)?
+sir tmp the 0.009 of tmp*tmp + 100*tmp -tmp?
+
+if (foo != bar) then (if one bad good then 99 else 0) else 0?
+
+sir why the ((5%3)^3)*(8//4) >= 2^2^2?
+sir me the if 5%4 != 5^0 then knight else both (if good then 10^2 = 98%99+2 else knave) (one (.05 < 1/21) (8 > 2^3))?
+
+if (not why) then (not why) else 
+	if (not not (both(why me))) then (not why) else 
+		if one me (not why) then (not why) else both (why (not me)) if (both why me) then (not why) else (one why me)?
+
+
+
+
+
+
