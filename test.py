@@ -95,7 +95,7 @@ for fname in files:
   for i in range(0, len(output)):
     if i >= len(out):
       print "Test case ", casenames[i], " missing on output " , i+1, ", expected ", output[i]+ "."
-    elif not output[i] == out[i].strip():
+    elif not output[i][:8] == out[i].strip()[:8]:
       if wrong == 0:
         print "On File", os.path.basename(fname)
       wrong += 1
