@@ -10,7 +10,7 @@ from subprocess import Popen, PIPE, STDOUT
 parser = OptionParser(usage="Usage: %prog [options] interpreter")
 #parser.add_option("-i", "--inter", metavar="NAME", dest="interpreter",
 #                  help="the name of the interpreter to run tests for") 
-parser.add_option("-q", "--quiet", dest="verbose", action="store_false", default=False,
+parser.add_option("-v", "--verbose", dest="verbose", action="store_true", default=False,
                   help="don't print status messages to stdout")
 parser.add_option("-t", "--tests", metavar="DIR", dest="testdir",
                   help="the directory tests are located in, defaulting to $FCPPTESTS") 
@@ -25,7 +25,11 @@ if not os.path.exists(options.testdir):
 options.testdir = os.path.abspath(options.testdir)
 
 if len(args) >= 1:
-  (interp_dir, interp_name) = os.path.split(args[0])
+  if os.path.isdir(args[0]):
+    interp_dir = args[0]
+    interp_name = "testInterp"
+  else:
+    (interp_dir, interp_name) = os.path.split(args[0])
 else:
   sys.exit('Error: no interpreter provided in arguments.')
 
@@ -40,18 +44,15 @@ if not os.path.isfile(os.getcwd() + "/" + interp_name):
   # Attempt to run the MAKEFILE
   if options.verbose:
     print "Executable not found, compiling using MAKEFILE..."
-    make = subprocess.check_call("make")
+    make = subprocess.check_call("make test")
   else:
-    make = subprocess.Popen("make", stdout=PIPE, stderr=STDOUT)
+    make = subprocess.Popen(['make', 'test'], stdout=PIPE, stderr=STDOUT)
     out = make.communicate()[0]
 elif options.verbose:
   print "Executable found, skipping MAKE"
 
 if not os.path.isfile(os.getcwd() + "/" + interp_name):
   sys.exit('Executable cannot be found or made.')
-
-
-
 
 # Grab all files from the $FCPPTESTS directory that are of the proper format
 files = []
@@ -106,5 +107,7 @@ for fname in files:
   elif options.verbose:
     print "Test case",  casenames[i], "correct!"
 
-if not anywrong:
+if not files:
+  print "No test files found!"
+elif not anywrong:
   print "All test cases passed succesfully!"
