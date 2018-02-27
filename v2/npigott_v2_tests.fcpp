@@ -1,6 +1,8 @@
 --Author: Nathaniel Pigott
 --Case Name: Pass/Fail
---Output: you passed!
+--Output:
+--you passed!
+--End Output
 
 sir test1 the 79 ?
 sir test2 the 90 ?
