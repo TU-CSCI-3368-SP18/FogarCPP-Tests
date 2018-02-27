@@ -24,10 +24,13 @@ if not os.path.exists(options.testdir):
   sys.exit('Error: test directory is not valid.')
 options.testdir = os.path.abspath(options.testdir)
 
+clean = False
+
 if len(args) >= 1:
   if os.path.isdir(args[0]):
     interp_dir = args[0]
     interp_name = "testInterp"
+    clean = True
   else:
     (interp_dir, interp_name) = os.path.split(args[0])
 else:
@@ -39,6 +42,9 @@ if options.verbose:
 # Check if executable exists
 os.chdir(interp_dir)
 
+if clean:
+  mclean = subprocess.Popen(['make', 'clean'], stdout=PIPE, stderr=STDOUT)
+  out = mclean.communicate()[0]
 
 if not os.path.isfile(os.getcwd() + "/" + interp_name):
   # Attempt to run the MAKEFILE
@@ -101,7 +107,7 @@ for fname in files:
   for i in range(0, len(output)):
     if i >= len(out):
       print "Test case ", casenames[i], " missing on output " , i+1, ", expected ", output[i]+ "."
-    elif not output[i][:8] == out[i].strip()[:8]:
+    elif not output[i][:7] == out[i].strip()[:7]:
       if wrong == 0:
         print "On File", os.path.basename(fname)
       wrong += 1
