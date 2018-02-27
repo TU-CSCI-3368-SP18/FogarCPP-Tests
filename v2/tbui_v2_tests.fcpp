@@ -1,17 +1,19 @@
---Author: Thoai Bui
---Case Name: some fib
---Output: "Hurray,"
+-- Case Name: Some fib
+-- Author: Thoai Bui
+-- Output:
+-- "Hurray,"
+-- End Output
 
 sir first the 1?
 sir second the 1?
-sir third the (first + second)?  --2
+sir third the (first + second)?  
 
 if (first < 2)
-then (fourth = third + second)   --3
+then (fourth = third + second) 
 else (fourth = first + second + third)
 
 sir answer the (if (both (fourth < 4) (fourth > 1)) 
-then (sir sixth the (fourth * 2 + third) lord of (sixth + fourth + third)) -- 8 + 5 = 13
+then (sir sixth the (fourth * 2 + third) lord of (sixth + fourth + third))
 else ("Uh uh, I made some mistakes along the way") )
 
 if (answer != "uh uh, I made some mistakes along the way")
