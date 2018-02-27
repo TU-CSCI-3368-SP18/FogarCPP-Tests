@@ -66,6 +66,7 @@ if options.verbose:
 
 # Run throught each test file
 anywrong = False
+eofError = False
 for fname in files:
   file = open(fname, "r")
   case = "Undefined"
@@ -90,7 +91,11 @@ for fname in files:
   # Perform all the calculations and compare them to the expected output
   p = subprocess.Popen(("./" + interp_name), stdin=file, stdout=PIPE, stderr=STDOUT)
   out = p.communicate()[0].splitlines()
+
   wrong = 0
+  if out[-1].endswith(" <stdin>: hGetLine: end of file"):
+    eofError=True
+    out.pop()
   if len(out) > len(output):
     print "Warning: More lines output", len(out), "than specified", len(output), "in file: ", os.path.basename(fname)
   for i in range(0, len(output)):
@@ -111,3 +116,5 @@ if not files:
   print "No test files found!"
 elif not anywrong:
   print "All test cases passed succesfully!"
+if eofError:
+  print "You don't test for end of file."
