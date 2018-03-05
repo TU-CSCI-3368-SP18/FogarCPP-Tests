@@ -1,0 +1,24 @@
+--Author: Benjamin Beyt
+--Case Name: Is it a leap year?
+--Output:
+--"It's not a leap year."
+--"It's a leap year."
+--End Output:
+
+sir year the 2018?
+sir check400 the year % 400 = 0?
+sir check100 the year % 100 = 0?
+sir check4 the year % 4 = 0?
+sir isLeapYear the "It's a leap year."?
+sir notLeapYear the "It's not a leap year."?
+
+if check400 then isLeapYear else if check100 then notLeapYear else if check4 then isLeapYear else notLeapYear?
+
+sir year the 1996?
+sir check400 the year % 400 = 0?
+sir check100 the year % 100 = 0?
+sir check4 the year % 4 = 0?
+sir isLeapYear the "It's a leap year."?
+sir notLeapYear the "It's not a leap year."?
+
+if check400 then isLeapYear else if check100 then notLeapYear else if check4 then isLeapYear else notLeapYear?
