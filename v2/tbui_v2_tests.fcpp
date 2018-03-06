@@ -6,16 +6,6 @@
 
 sir first the 1?
 sir second the 1?
-sir third the (first + second)?  
+sir third the first + second?
 
-if (first < 2)
-then (fourth = third + second) 
-else (fourth = first + second + third)
-
-sir answer the (if (both (fourth < 4) (fourth > 1)) 
-then (sir sixth the (fourth * 2 + third) lord of (sixth + fourth + third))
-else ("Uh uh, I made some mistakes along the way") )
-
-if (answer != "uh uh, I made some mistakes along the way")
-then "Hurray,"             
-else "I suck"?
+sir fourth the if (first < 2) then (third + second) else (first + second + third) of sir ans the (if both (fourth < 4) (fourth > 1) then (fourth + fourth + third) else 9000) of if ans = 8 then "hurray" else " monkas"?
