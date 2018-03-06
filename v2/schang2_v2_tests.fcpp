@@ -1,0 +1,31 @@
+--Author: Stephen Chang
+--Case Name: Are you supposed to print sir statements?
+--Output:
+--"I think we are supposed to"
+--"I think we are not supposed to"
+--Knight
+--Knave
+--"possible to choose"
+--"possible to decide"
+--120
+--9
+--"ok"
+--Knave
+--Knight
+--End Output:
+
+sir option1 the "I think we are supposed to"?
+sir option2 the "I think we are not supposed to"?
+
+sir chooseoption1 the Knight?
+sir chooseoption2 the knave?
+
+if (both chooseoption1 chooseoption2) then "impossible to decide" else "possible to choose"?
+if (one chooseoption1 chooseoption2) then "possible to decide" else "impossible to choose"?
+
+sir var120 the 20 + 4 * 5 ^ 2?
+sir var9 the ~((232.23 - (23 // 3)) ^ 2) % 10?
+
+if (var9 >= var120) then "wrong" else "ok"?
+if (var9 < var120) then (sir foo the knave lord of (sir bar the knight lord of both foo bar)) else "boo"?
+if (var9 < var120) then (sir foo the knave lord of (sir bar the knight lord of one bar (bar >=foo))) else "boo"?
