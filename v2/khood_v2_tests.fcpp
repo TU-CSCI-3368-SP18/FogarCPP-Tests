@@ -1,19 +1,19 @@
 --Case Name: Sine of pi/12 (15 degrees) with 3 sig figs
 --Author: Kayla Hood
 --Output:
--- 0.2617993877991494
--- 0.2617993877991494
--- -2.9905745254918794e-3
--- 1.0248537325895962e-5
--- -1.672437319715465e-8
--- 0.2588190450866102
--- 0.2588190450866102 
+-- 0.2617994
+-- 0.2617994
+-- -2.990575e-3
+-- 1.0248539e-5
+-- -1.6724377e-8
+-- 0.25881904
+-- 0.25881904
 --End Output
 
 sir radians the (pi / 12)?
 sir zero the (radians)?
-sir one the (-1 / (3*2*1))*(radians ^ 3)?
+sir varone the (-1 / (3*2*1))*(radians ^ 3)?
 sir two the (1 / (5 * 4 * 3 * 2 * 1))*(radians ^ 5)?
 sir three the (-1 / (7 * 6 * 5 * 4 * 3 * 2 * 1))*(radians ^ 7)?
-sir result the (zero + one + two + three)?
+sir result the (zero + varone + two + three)?
 if (result > 0) then result else -1?
