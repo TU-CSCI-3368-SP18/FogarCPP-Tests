@@ -99,7 +99,9 @@ for fname in files:
   out = p.communicate()[0].splitlines()
 
   wrong = 0
-  if out[-1].endswith(" <stdin>: hGetLine: end of file"):
+  if len(out) == 0:
+    print "Warning: no output specified."
+  elif out[-1].endswith(" <stdin>: hGetLine: end of file"):
     eofError=True
     out.pop()
   if len(out) > len(output):
@@ -107,6 +109,8 @@ for fname in files:
   for i in range(0, len(output)):
     if i >= len(out):
       print "Test case ", casenames[i], " missing on output " , i+1, ", expected ", output[i]+ "."
+      wrong += 1
+      anywrong = True
     elif not output[i][:7] == out[i].strip()[:7]:
       if wrong == 0:
         print "On File", os.path.basename(fname)
