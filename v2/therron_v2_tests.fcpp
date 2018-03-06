@@ -1,28 +1,36 @@
 --Author: Tyler Herron
 --Case Name: The Birthday Boy
---Output: Good job, and happy birthday!
+--Output: 
+-- That's not right.
+-- Your month is all wrong!
+-- Your day is out of wack too.
+-- 17
+-- July
+-- 1997
+-- Happy birthday boy!
+--End Output:
 
 -- Var declarations
-sir month the "june" ?                    -- "june"
 sir day the 2 - 0.3 ?                     -- 1.7
-sir rightAnswer the Knave ?               -- "Knave" = false
+sir month the "june" ?                    -- "june"
+sir year the 0.001997 ?                   -- 0.001997
 
 -- Place declarations
 sir ten the 10^1 ?
 sir hundred the 10^2 ?
 
-sir year the (1900//100 + 1*0.97) of    -- 19.97
-    if (not rightAnswer) then
-        if (month != "july") then sir month the july ?
-        ifz (day - 17) then rightAnswer = Knight ?
-                       else day = day * ten ?
-        if (year <= 1997) then rightAnswer = Knight ?
-                          else year = (year * hundred) // 1 ?
+if(not rightAnswer) then "We'll fix it!" else "That's not right." ?
 
+if (month = "july") then "All clear here." else "Your month is all wrong!" ?
+sir month the "July" ?
 
-sir proceed the Knight ?
-ifz (10 % 5) then proceed = Knight ?
-             else "Something went bad." ?
-if(both rightAnswer proceed)
-    then "Good job, and happy birthday!" ?
-    else "Bad job. Try again." ?
+if(one (day < 17) ((day+17) > 17)) then "Your day is out of wack too." else "It's a clear, sunny day." ?
+sir day the (day*ten) ?
+
+if(not (year = 1997)) then "What year were you born on again? Ah, that's right!" else "Year checks out." ?
+sir year the (year*hundred) ? sir year the (year*hundred) ? sir year the (year*hundred) ?
+
+day ? month ? year ?
+
+sir finalMessage the "Happy birthday boy!" lord of
+    if (finalMessage = "Peace nerd!") then "I'm all broken." else finalMessage ?
