@@ -1,0 +1,72 @@
+--Case Name: Basic Sir
+--Author: Ian Witecki
+--Output:
+-- Knave
+-- Knight
+-- "hello"
+--End Output:
+sir lie the Knave?
+sir truth the knight?
+sir hi the "hello"?
+
+
+--Case Name: If else then
+--Author: Ian Witecki
+--Output:
+-- "hello"
+--End Output:
+if (truth) then hi else "incorrect"?
+
+
+--Case Name: String Equality 
+--Author: Ian Witecki
+--Output:
+-- Knight
+-- Knave
+--End Output:
+"cat" = "cat"?
+"cat" != "cat"?
+
+
+--Case Name: Comparing Numbers
+--Author: Ian Witecki
+--Output:
+-- Knight
+-- Knight
+-- Knave
+-- Knight
+-- Knight
+-- Knight
+-- Knight
+--End Output:
+7 < 10.0?
+7.0 < 10?
+7.0 < 7?
+7 <= 7?
+7.0 = 7.0?
+8.0 >= 7.0?
+8 > 5?
+
+
+--Case Name: Sir MathChecker
+--Author: Ian Witecki
+--Output:
+-- Knight
+--End Output:
+sir var0 the 0 lord of (if (((~9.6)^2) - 10^(~1.6) = var0) then truth else lie)?
+
+
+--Case Name: Both, One, Not
+--Author: Ian Witecki
+--Output:
+-- "correct"
+-- "correct"
+-- "correct"
+-- "correct"
+-- "correct"
+--End Output:
+if (one truth lie) then "correct" else "wrong"?
+if (not lie) then "correct" else "wrong"?
+if (not truth) then "wrong" else "correct"?
+if (both truth truth) then "correct" else "wrong"?
+if (both lie truth) then "wrong" else "correct"?
