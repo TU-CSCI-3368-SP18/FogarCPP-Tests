@@ -1,0 +1,36 @@
+-- Author: Arthur Feeney
+-- Case Name: 16 choose 6 and conditionals
+-- Output:
+-- 720
+-- 3628800
+-- 20922789888000
+-- 8008
+-- 16016
+-- 8010
+-- 0
+-- Knight
+-- 5
+-- 5
+-- End Output:
+
+sir sixFact the 6 * 5 * 4 * 3 * 2 * 1?
+
+sir tenFact the 10 * 9 * 8 * 7 * sixFact?
+
+sir sixteenFact the 16 * 15 * 14 * 13 * 12 * 11 * tenFact?
+
+sir sixteenChooseSix the ~(sixteenFact / (sixFact * tenFact))?
+
+if (both (not (sixFact > tenFact)) (tenFact < sixteenFact)) then sixteenChooseSix * 2 else 1?
+
+
+sir two the 2 lord of sixteenChooseSix + two?
+
+if (both Knight (not (both Knave (not Knave)))) then 0 else 1?
+
+sir valour the Knight lord of if valour then not Knave else Knave?
+
+
+-- just curious!
+sir sexyFive the ((((((((((((((((((((((((((((5))))))))))))))))))))))))))))?
+sexyFive?
