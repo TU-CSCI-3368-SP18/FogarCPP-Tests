@@ -17,12 +17,12 @@
 --knight
 --End output
 
-sir foo of "foo"?
-sir bar of "bar"?
-sir start of 0?
-sir end of 10?
-sir good of (both (2^5 = 32) (one knight knave))?
-sir bad of (one (both (7%5 = 2) (~pi > 3)) (if good then (both knight knave) else (not knave))?
+sir foo the "foo"?
+sir bar the "bar"?
+sir start the 0?
+sir end the 10?
+sir good the (both (2^5 = 32) (one knight knave))?
+sir bad the (one (both (7%5 = 2) (~pi > 3)) (if good then (both knight knave) else (not knave))?
 
 if foo = bar then bad else good?
 if bar != bar then bad else good?
