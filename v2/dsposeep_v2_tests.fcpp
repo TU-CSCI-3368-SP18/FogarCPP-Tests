@@ -5,16 +5,16 @@
 --bar
 --0
 --10
---knight
---knave
---knight
---knight
+--Knight
+--Knave
+--Knight
+--Knight
 -- -3
 --0.891081
 --99
---knight
---knave
---knight
+--Knight
+--Knave
+--Knight
 --End output
 
 sir foo the "foo"?
