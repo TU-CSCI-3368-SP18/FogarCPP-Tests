@@ -13,7 +13,7 @@ sir vect3 the (1, 1)?
 
 sir dot5d the pun x -> pun y -> fst(x) * fst(y) + fst(snd(x)) * fst(snd(y)) + fst(snd(snd(x))) * fst(snd(snd(y))) + fst(snd(snd(snd(x)))) * fst(snd(snd(snd(y)))) + snd(snd(snd(snd(x)))) * snd(snd(snd(snd(y))))?
 
-sir scale2d the pun x -> pun y -> (x * fst(y), x * snd(y)) 
+sir scale2d the pun x -> pun y -> (x * fst(y), x * snd(y))?
 
 sir love the dot5d(vect1)(vect2)?
 sir god the scale5d(5)(vect1)?
