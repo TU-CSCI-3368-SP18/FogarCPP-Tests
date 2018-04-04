@@ -1,0 +1,49 @@
+--Case Name: V3 test program
+--Author: Drew Sposeep
+--Output: 
+--5
+--3
+--(5,6)
+--("hi",",")
+--("how","are")
+--("you","?")
+--9990
+--9990
+--Knight
+--"It's even!"
+--"It's odd!"
+--Knight
+--112
+--128
+--150
+--
+--0
+--End output
+
+sir count the (1, (2, (3, (4, (5, 6)))))?
+fst snd snd snd snd count?
+fst snd snd count?
+snd snd snd snd count?
+
+sir scramble the (1, (7, ("you", (2, ("are", (4, (",", (3, ("how", (6, ("?", (5, "hi"))))))))))))?
+(snd snd snd snd snd snd snd snd snd snd snd snd scramble, fst snd snd snd snd snd snd scramble)? 
+(fst snd snd snd snd snd snd snd snd scramble, fst snd snd snd snd scramble)?
+(fst snd snd scramble, fst snd snd snd snd snd snd snd snd snd snd scramble)?
+
+sir fun the pun x -> (10*x)^2-10?
+fun (10)?
+fun (-10)?
+fun (0.5) = fun (-0.5) both fun (-0.5) = 15.0?
+
+sir evenCheck the pun x -> if x%2=0 then "It's even!" else "It's odd!"?
+evenCheck (888)?
+evenCheck (787)?
+(evenCheck (9.9) = "It's even!") one (evenCheck (4.4) = evenCheck (5.5) both evenCheck (10.0) = evenCheck (-6))?
+
+dame overOneHundred the pun x -> if x <= 0 then 0 else if x > 100 then x else overOneHundred (2*x)?
+overOneHundred (7)?
+overOneHundred (1)?
+overOneHundred (75)?
+overOneHundred (101)?
+overOneHundred (-88)?
+
