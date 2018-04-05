@@ -2,8 +2,11 @@
 -- Case Name: Five Dimensional Inner Product
 -- Output:
 -- (5,5)
--- 1
+-- 2
 -- ninja
+-- 120
+-- 24
+-- 40320
 -- End Output:
 
 sir vect1 the (1, (-1, (2, (3, -1))))?
@@ -25,3 +28,10 @@ if love > 99999 then 2 else 1?
 sir str the "hi there my name is arthur!!!!!"?
 
 if Knight both Knave then "yolo" else "ninja"?
+
+
+dame fact the pun x -> if x = 0 then 1 else x * fact(x-1)?
+
+fact(5)?
+fact(4)?
+fact(8)?
