@@ -27,10 +27,10 @@ if (result > 0) then result else -1?
 -- "house"
 --End Output
 
-if (one(knight,knave)) then "She's" else "He's"?
-if (both(knave,knight)) then "not" else "a"?
-if (both(knight,knight)) then "brick" else "cobblestone"?
-if (one(knave,knave)) then "house" else "wall"?
+if (knight one knave) then "She's" else "He's"?
+if (knave both knight) then "not" else "a"?
+if (knight both knight) then "brick" else "cobblestone"?
+if (knave one knave) then "house" else "wall"?
 
 --Case Name: Pairs Test
 --Author: Kayla Hood
@@ -58,5 +58,3 @@ frthPair?
 fthPair?
 sixPair?
 svthPair?
-
-
