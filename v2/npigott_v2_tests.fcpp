@@ -1,8 +1,18 @@
 --Author: Nathaniel Pigott
 --Case Name: Pass/Fail
 --Output:
+--79
+--90
+--81
+--99
+--87
+--100
+--83.3333
+--95.3333
+--"you passed!"
+--"you failed :("
 --86.75
---you passed!
+--"you passed!"
 --End Output
 
 sir test1 the 79 ?

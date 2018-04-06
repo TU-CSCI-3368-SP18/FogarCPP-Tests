@@ -1,28 +1,32 @@
 --Author: Ray Sparks
 --Case Name: Nested Variable Declarations
 --Output:
--- 25
+--20
+--50.0
+--25
 --End Output:
 
 -- global declaration
 sir x the 20?                                 -- x = 20
 sir y the 50.0?                               -- y = 50.0
 
-sir z the 2 lord of                           -- z = 2
-  sir a the 4.0 of                            -- a = 4.0
-    if Knight                                 -- should always run the 'then' case
-    then sir b the 5 lord of                  -- b = 5
-           if a*b = x                         -- (a*b = 20.0) == (x = 20)
-           then y//2                          -- output -> y//2 = 25
-           else knave                         -- should not be run (output -> knave)
-    else sir b the 25 of                      -- should not be run (b = 25)
-           y+b?                               -- should not be run (output -> y+b = 75.0)
+sir z the 2 lord of sir a the 4.0 of if Knight then sir b the 5 lord of if a*b = x then y//2 else knave else sir b the 25 of y+b?
 
 --Case Name: Boolean Testing 
 --Output:
--- True
--- True
--- "Hello World!"
+--"Hello World!"
+--"Hello World!"
+--Knave
+--Knave
+--Knight
+--Knight
+--Knave
+--Knave
+--Knight
+--Knave
+--Knight
+--Knight
+--"Hello World!"
 --End Output:
 
 -- more global declarations
@@ -42,10 +46,7 @@ sir test2 the not both omega one theta iota?  -- !(omega && (theta || iota)) = T
 sir test3 the mu = nu?                        -- (mu == nu) = False
 
 test1 = test3?                                -- (test1(False) == test3(False)) = True
-sir test4 the test1 = test3 lord of
-  test2 = test4?                              -- (test2(True) == test4(True)) = True
+sir test4 the test1 = test3 lord of test2 = test4?                              -- (test2(True) == test4(True)) = True
 
 -- this should evaluate to true
-if both not test1 both test2 not test3        -- (!test1 && (test2 && !test3)) = True
-then alpha                                    -- output -> "Hello World!"
-else "Failure"?                               -- should not be run (output -> "Failure")
+if both not test1 both test2 not test3 then alpha else "Failure"?

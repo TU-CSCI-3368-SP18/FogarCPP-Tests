@@ -4,11 +4,11 @@
 -- 1
 -- 1
 -- 2
--- "Hurray,"
+-- "Hurray"
 -- End Output
 
 sir first the 1?
 sir second the 1?
 sir third the first + second?
 
-sir fourth the if (first < 2) then (third + second) else (first + second + third) of sir ans the (if both (fourth < 4) (fourth > 1) then (fourth + fourth + third) else 9000) of if ans = 8 then "hurray" else " monkas"?
+sir fourth the if (first < 2) then (third + second) else (first + second + third) of sir ans the (if both (fourth < 4) (fourth > 1) then (fourth + fourth + third) else 9000) of if ans = 8 then "Hurray" else " monkas"?

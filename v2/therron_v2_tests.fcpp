@@ -1,13 +1,25 @@
 --Author: Tyler Herron
 --Case Name: The Birthday Boy
 --Output: 
--- That's not right.
--- Your month is all wrong!
--- Your day is out of wack too.
--- 17
--- July
--- 1997
--- Happy birthday boy!
+-- 1.7
+-- "june"
+-- 1.997e-3
+-- 10
+-- 100
+-- Knave
+-- "We'll fix it!"
+-- "Your month is all wrong!"
+-- "July"
+-- "Your day is out of wack too."
+-- 17.0
+-- "What year were you born on again? Ah, that's right!"
+-- 0.19970000000000002
+-- 19.970000000000002
+-- 1997.0000000000002
+-- 17.0
+-- "July"
+-- 1997.0000000000002
+-- "Happy birthday boy!"
 --End Output:
 
 -- Var declarations
@@ -19,6 +31,7 @@ sir year the 0.001997 ?                   -- 0.001997
 sir ten the 10^1 ?
 sir hundred the 10^2 ?
 
+sir rightAnswer the Knave ?
 if(not rightAnswer) then "We'll fix it!" else "That's not right." ?
 
 if (month = "july") then "All clear here." else "Your month is all wrong!" ?
@@ -28,9 +41,12 @@ if(one (day < 17) ((day+17) > 17)) then "Your day is out of wack too." else "It'
 sir day the (day*ten) ?
 
 if(not (year = 1997)) then "What year were you born on again? Ah, that's right!" else "Year checks out." ?
-sir year the (year*hundred) ? sir year the (year*hundred) ? sir year the (year*hundred) ?
+sir year the (year*hundred) ?
+sir year the (year*hundred) ?
+sir year the (year*hundred) ?
 
-day ? month ? year ?
+day ? 
+month ? 
+year ?
 
-sir finalMessage the "Happy birthday boy!" lord of
-    if (finalMessage = "Peace nerd!") then "I'm all broken." else finalMessage ?
+sir finalMessage the "Happy birthday boy!" lord of if (finalMessage = "Peace nerd!") then "I'm all broken." else finalMessage ?
