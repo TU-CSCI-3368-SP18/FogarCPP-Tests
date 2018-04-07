@@ -1,0 +1,17 @@
+"Program written by zach solcher"?
+"This test program implements the the euclidean algorithm of beast"?
+"The euclidean algorithm computes the greatest common divisor of two integers"?
+"Constraints on the arguments: x and y are integers, x > 0, y >= 0"?
+dame gCD the pun x -> pun y -> if y = 0 then x else gCD (y) (x % y)?
+"GCD(27, 9) should be 9"?
+gCD(27)(9)?
+"GCD(111, 259) should be 37"?
+gCD(111)(259)?
+"GCD(48, 180) should be 12"?
+gCD(48)(180)?
+"GCD(3, 5) should be 1"?
+gCD(3)(5)?
+"GCD(12, 60) should be 12"?
+gCD(12)(60)?
+"GCD(12, 90) should be 6"?
+gCD(12)(90)?

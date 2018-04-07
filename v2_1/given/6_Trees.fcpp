@@ -1,0 +1,32 @@
+"Defining some trees. trees are a leaf with nothing, or a node with a value, a left child, and a right child"?
+
+sir leaf the ("Leaf",stump)?
+sir nodeA the ("Node",(2, (leaf,leaf)))?
+sir nodeB the ("Node",(7, (leaf,leaf)))?
+sir nodeC the ("Node",(5, (nodeA,nodeB)))?
+sir nodeD the ("Node",(8, (nodeC,leaf)))?
+
+sir comment the "Function to raise an error"?
+sir error the pun x -> Knight < 3?
+sir comment the "Function to get values and children of a node"?
+sir val the pun tree -> if fst(tree)= "Leaf" then error(0) else fst(snd(tree))?
+sir lft the pun tree -> if fst(tree)= "Leaf" then error(0) else fst(snd(snd(tree)))?
+sir rgt the pun tree -> if fst(tree)= "Leaf" then error(0) else snd(snd(snd(tree)))?
+
+
+"(node ,(8,(( node ,(5,(( node ,(2,(( leaf ,stump),( leaf ,())))),( node ,(7,(( leaf ,()),( leaf ,()))))))),( leaf ,()))))"?
+nodeD?
+"Left child"?
+"(node ,(5,(( node ,(2,(( leaf ,stump),( leaf ,())))),( node ,(7,(( leaf ,()),( leaf ,())))))))"?
+lft(nodeD)?
+"Value: 8"?
+val(nodeD)?
+"Right child"?
+"(leaf,stump)"?
+rgt(nodeD)?
+"Child of a leaf: should be an error"?
+rgt(leaf)?
+
+"Function to sum the elements of a tree: should be 22"?
+dame sumTree the pun tree -> if fst(tree) = "Leaf" then 0 else val(tree)+sumTree(lft(tree))+sumTree(rgt(tree))?
+sumTree(nodeD)?

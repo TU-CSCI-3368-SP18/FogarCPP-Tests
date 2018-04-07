@@ -1,0 +1,9 @@
+"This is a string."?
+sir x the "Strings can be bound to variables." of x?
+sir y the "Strings can be bound to variables."?
+"Lets see if strings can be equal: these should be true"?
+sir x the "Strings can be bound to variables." of x = y?
+if y = "foo" then Knave else Knight?
+"Lets see if strings can be inequal: these should be false"?
+sir z the "Strings can be bound to local varaibles" of z = y?
+"Strings can be bound to variables." != y?

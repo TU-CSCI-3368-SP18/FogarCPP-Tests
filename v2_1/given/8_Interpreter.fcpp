@@ -1,0 +1,44 @@
+"Defining some abstract syntax trees. trees are a int with an integer, an add node with two subexpressions, a mult node with two subexpressions, or a neg node with one subexpression." ?
+
+sir v3 the ("Int",3)?
+sir v2 the ("Int",2)?
+sir v5 the ("Int",5)?
+sir nodeA the ("Add",(v3,v2))?
+sir nodeB the ("Neg",v5)?
+sir nodeC the ("Mult",(nodeA,nodeB))?
+sir nodeD the ("Mult",(v5,v5))?
+sir nodeE the ("Add",(nodeC,nodeD))?
+
+sir comment the "Function to raise an error"?
+sir error the pun x -> Knight < 3?
+sir comment the "Function to get left and right subtrees for binary aST nodes"?
+sir lft the pun ast -> fst(snd(ast))?
+sir rgt the pun ast -> snd(snd(ast))?
+
+"Should show:"?
+"(add ,(( mult ,(( add ,(( int ,3),( int ,2))),( neg ,( int ,5)))),( mult ,(( int ,5),( int ,5)))))"?
+nodeE?
+"Left child"?
+"(mult ,(( add ,(( int ,3),( int ,2))),( neg ,( int ,5))))"?
+lft(nodeE)?
+"Right child"?
+"( mult ,(( int ,5),( int ,5)))"?
+rgt(nodeE)?
+
+sir comment the "Function to evaluate an aST"?
+sir f the pun x -> fst(x)?
+sir s the pun x -> snd(x)?
+dame eval the pun t -> sir l the f(t) of if l = "Int" then s(t) else if l = "Neg" then -eval(s(t)) else if l = "Mult" then eval(lft(t)) * eval(rgt(t)) else if l = "Add" then eval(lft(t)) + eval(rgt(t)) else error(stump)?
+
+"3"?
+eval(v3)?
+"3+2"?
+eval(nodeA)?
+"-5"?
+eval(nodeB)?
+"(3+2)*-5"?
+eval(nodeC)?
+"5*5"?
+eval(nodeD)?
+"5*5+(3+2)*-5"?
+eval(nodeE)?

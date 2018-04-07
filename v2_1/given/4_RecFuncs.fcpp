@@ -1,0 +1,29 @@
+"some basic recursive punctions"?
+sir inc the pun x -> x + 1?
+sir dec the pun x -> x - 1?
+sir bestpun the pun x -> if x < 5 then inc else dec?
+sir bestnum the pun x -> if x < 5 then 5 - x else x - 5?
+dame applyNTimes the pun f -> pun n -> pun x -> if n = 0 then x else applyNTimes(f)(n-1)(f(x))?
+dame applyNTimes2 the pun f -> pun n -> if n = 1 then f else pun x -> f(applyNTimes2(f)(n-1)(x))?
+sir sum the applyNTimes(inc)?
+sir sub the applyNTimes2(dec)?
+sir fixnum the pun x -> sir fn the (bestpun(x), bestnum(x)) of applyNTimes(fst(fn))(snd(fn))(x)?
+"These should be 5"?
+fixnum(10)?
+fixnum(2)?
+fixnum(0)?
+fixnum(5)?
+fixnum(-10)?
+fixnum(-200)?
+"These should be true"?
+sum(3)(2) = sub(2)(7)?
+sum(8)(2) = sum(15)(-5)?
+
+dame fact the pun x -> if x = 1 then 1 else x*fact(x-1)?
+fact(3) = 6?
+fact(10) = 3628800?
+
+
+
+"This might pop the stack, or just take a while"?
+fixnum(-500000)?
