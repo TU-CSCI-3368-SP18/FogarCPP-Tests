@@ -1,0 +1,40 @@
+--Author: Ray Sparks
+--Case Name: Nested Variable Declarations
+--Output:
+-- 25
+--End Output:
+
+-- global declaration
+sir x the 20?                                 -- x = 20
+sir y the 50.0?                               -- y = 50.0
+
+sir z the 2 lord of sir a the 4.0 of if Knight then sir b the 5 lord of if a*b = x then y//2 else knave else sir b the 25 of y+b?                               -- should not be run (output -> y+b = 75.0)
+
+--Case Name: Boolean Testing 
+--Output:
+-- Knight
+-- Knight
+-- "Hello World!"
+--End Output:
+
+-- more global declarations
+sir alpha the "Hello World!"?                 -- alpha = "Hello World!"
+sir beta the "Hello World!"?                  -- beta = "Hello World!"
+
+sir omega the alpha != beta?                  -- omega = (alpha != beta) = False
+
+sir theta the Knave?                          -- theta = False
+sir iota the knight?                          -- iota = True
+
+sir mu the 2 >= 2.0?                          -- mu = True
+sir nu the 2 > 2.0?                           -- nu = False
+
+sir test1 the both omega theta?               -- omega && theta = False
+sir test2 the not both omega one theta iota?  -- !(omega && (theta || iota)) = True -- th||io=t, t&&om=f, !f=t
+sir test3 the mu = nu?                        -- (mu == nu) = False
+
+test1 = test3?                                -- (test1(False) == test3(False)) = True
+sir test4 the test1 = test3 lord of test2 = test4?                              -- (test2(True) == test4(True)) = True
+
+-- this should evaluate to true
+if both not test1 both test2 not test3 then alpha else "Failure"?                               -- should not be run (output -> "Failure")

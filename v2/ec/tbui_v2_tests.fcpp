@@ -1,0 +1,17 @@
+-- Case Name: Some fib
+-- Author: Thoai Bui
+-- Output:
+-- 1
+-- 1
+-- 2
+-- "Hurray"
+-- End Output
+
+sir first the 1?
+first?
+sir second the 1?
+second?
+sir third the first + second?
+third?
+
+sir fourth the if (first < 2) then (third + second) else (first + second + third) of sir ans the (if both (fourth < 4) (fourth > 1) then (fourth + fourth + third) else 9000) of if ans = 8 then "Hurray" else " monkas"?

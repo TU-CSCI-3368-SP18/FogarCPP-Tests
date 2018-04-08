@@ -1,0 +1,9 @@
+--Case Name: if math is right
+--Author: Morgan King
+--Output:
+-- 5
+-- "hello"
+--End Output
+
+if 2+4=6 then 5 else "hello"?
+if 2+4=8 then 5 else "hello"?

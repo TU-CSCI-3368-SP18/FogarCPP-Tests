@@ -1,0 +1,13 @@
+--Case Name: Variable royalty
+--Author: Alex Hicks
+--Output:
+-- 216
+-- Knight
+-- 1337
+--End Output:
+sir x the 6 lord of sir x2 the x * 6 lord of x2 * 6 ?
+sir global the life ?
+sir doubleglobal the global*2 ?
+sir hellotext the "Hello World" ?
+hellotext = "Hello World" ?
+if hellotext = "not Hello World" then "what" else 1337 ?

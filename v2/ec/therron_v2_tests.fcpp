@@ -1,0 +1,40 @@
+--Author: Tyler Herron
+--Case Name: The Birthday Boy
+--Output: 
+-- "That's not right."
+-- "Your month is all wrong!"
+-- "Your day is out of wack too."
+-- "What year were you born on again? Ah, that's right!"
+-- 17
+-- "July"
+-- 1997
+-- "Happy birthday boy!"
+--End Output:
+
+-- Var declarations
+sir day the 2 - 0.3 ?                     -- 1.7
+sir month the "june" ?                    -- "june"
+sir year the 0.001997 ?                   -- 0.001997
+
+-- Place declarations
+sir ten the 10^1 ?
+sir hundred the 10^2 ?
+sir rightAnswer the Knight ?
+if(not rightAnswer) then "We'll fix it!" else "That's not right." ?
+
+if (month = "july") then "All clear here." else "Your month is all wrong!" ?
+sir month the "July" ?
+
+if(one (day < 17) ((day+17) > 17)) then "Your day is out of wack too." else "It's a clear, sunny day." ?
+sir day the ~ (day*ten) ?
+
+if(not (year = 1997)) then "What year were you born on again? Ah, that's right!" else "Year checks out." ?
+sir year the (year*hundred) ? 
+sir year the (year*hundred) ?
+sir year the ~ (year*hundred) ?
+
+day ? 
+month ? 
+year ?
+
+sir finalMessage the "Happy birthday boy!" lord of if (finalMessage = "Peace nerd!") then "I'm all broken." else finalMessage ?
