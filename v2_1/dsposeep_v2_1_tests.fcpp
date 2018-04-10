@@ -21,14 +21,14 @@
 --End output
 
 sir count the (1, (2, (3, (4, (5, 6)))))?
-fst snd snd snd snd count?
-fst snd snd count?
-snd snd snd snd count?
+fst (snd (snd (snd (snd (count)))))?
+fst (snd (snd (count)))?
+snd (snd (snd (snd (count))))?
 
 sir scramble the (1, (7, ("you", (2, ("are", (4, (",", (3, ("how", (6, ("?", (5, "hi"))))))))))))?
-(snd snd snd snd snd snd snd snd snd snd snd snd scramble, fst snd snd snd snd snd snd scramble)? 
-(fst snd snd snd snd snd snd snd snd scramble, fst snd snd snd snd scramble)?
-(fst snd snd scramble, fst snd snd snd snd snd snd snd snd snd snd scramble)?
+(snd (snd (snd (snd (snd (snd (snd (snd (snd (snd (snd (snd (scramble)))))))))))), fst (snd (snd (snd (snd (snd (snd (scramble))))))))? 
+(fst (snd (snd (snd (snd (snd (snd (snd (snd (scramble))))))))), fst (snd (snd (snd (snd (scramble))))))?
+(fst (snd (snd (scramble))), fst (snd (snd (snd (snd (snd (snd (snd (snd (snd (snd (scramble))))))))))))?
 
 sir fun the pun x -> (10*x)^2-10?
 fun (10)?
