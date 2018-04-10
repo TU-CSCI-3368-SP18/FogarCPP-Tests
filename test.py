@@ -9,11 +9,11 @@ from subprocess import Popen, PIPE, STDOUT
 # Get the interpreter from optparse
 parser = OptionParser(usage="Usage: %prog [options] interpreter")
 #parser.add_option("-i", "--inter", metavar="NAME", dest="interpreter",
-#                  help="the name of the interpreter to run tests for") 
+#                  help="the name of the interpreter to run tests for")
 parser.add_option("-v", "--verbose", dest="verbose", action="store_true", default=False,
                   help="don't print status messages to stdout")
 parser.add_option("-t", "--tests", metavar="DIR", dest="testdir",
-                  help="the directory tests are located in, defaulting to $FCPPTESTS") 
+                  help="the directory tests are located in, defaulting to $FCPPTESTS")
 (options, args) = parser.parse_args()
 if options.testdir is None:
   if 'FCPPTESTS' in os.environ:
@@ -95,7 +95,8 @@ for fname in files:
   file.close
   file = open(fname, "r")
   # Perform all the calculations and compare them to the expected output
-  p = subprocess.Popen(("./" + interp_name), stdin=file, stdout=PIPE, stderr=STDOUT)
+  abs_interp_path = os.path.abspath("./" + interp_name) # Added by Kayla Hood to help with a weird problem on Windows (with MSYS32)
+  p = subprocess.Popen((abs_interp_path), stdin=file, stdout=PIPE, stderr=STDOUT)
   out = p.communicate()[0].splitlines()
 
   wrong = 0

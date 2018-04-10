@@ -1,12 +1,6 @@
 --Case Name: Sine of pi/12 (15 degrees) with 3 sig figs
 --Author: Kayla Hood
 --Output:
--- 0.2617994
--- 0.2617994
--- -2.990575e-3
--- 1.0248539e-5
--- -1.6724377e-8
--- 0.25881904
 -- 0.25881904
 --End Output
 
@@ -30,7 +24,7 @@ if (result > 0) then result else -1?
 if (knight one knave) then "She's" else "He's"?
 if (knave both knight) then "not" else "a"?
 if (knight both knight) then "brick" else "cobblestone"?
-if (knave one knave) then "house" else "wall"?
+if (not (knave one knave)) then "house" else "wall"?
 
 --Case Name: Pairs Test
 --Author: Kayla Hood
@@ -51,10 +45,10 @@ sir frthPair the ("to catch them is my","to tame them is my")?
 sir fthPair the ("real test","honest task")?
 sir sixPair the ("to train them","to feed them")?
 sir svthPair the ("is a chore","is my cause")?
-firstPair?
-sndPair?
-trdPair?
-frthPair?
-fthPair?
-sixPair?
-svthPair?
+fst(firstPair)?
+snd(sndPair)?
+fst(trdPair)?
+fst(frthPair)?
+fst(fthPair)?
+fst(sixPair)?
+snd(svthPair)?
