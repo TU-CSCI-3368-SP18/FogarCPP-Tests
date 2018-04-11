@@ -1,10 +1,18 @@
 #!/bin/python
-import sys, os, subprocess
+import sys, os, subprocess, re
 
 from optparse import OptionParser
 from subprocess import Popen, PIPE, STDOUT
 
 
+def cleanString(string):
+  string=string.strip().replace("Knave","knave").replace("Knight","knight")
+  string=string.replace(", ",",").replace("Stump","stump")
+  string=re.sub(r'(\d{5})\d*',r'\1', string)
+  return string
+
+def matchAnswer(string,answer):
+    return cleanString(string)==cleanString(answer)
 
 # Get the interpreter from optparse
 parser = OptionParser(usage="Usage: %prog [options] interpreter")
@@ -112,7 +120,7 @@ for fname in files:
       print "Test case ", casenames[i], " missing on output " , i+1, ", expected ", output[i]+ "."
       wrong += 1
       anywrong = True
-    elif not output[i][:7] == out[i].strip()[:7]:
+    elif not matchAnswer(out[i],output[i]): 
       if wrong == 0:
         print "On File", os.path.basename(fname)
       wrong += 1

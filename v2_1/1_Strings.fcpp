@@ -1,0 +1,17 @@
+--Case Name: String Tests
+--Author: Seth Fogarty
+--Output:
+--"This is a string."
+--"Strings can be bound to variables."
+--Knight
+--Knight
+--Knave
+--Knave
+--End Output:
+"This is a string."?
+sir x the "Strings can be bound to variables." of x?
+sir y the "Strings can be bound to variables."?
+sir x the "Strings can be bound to variables." of x = y?
+if y = "foo" then Knave else Knight?
+sir z the "Strings can be bound to local varaibles" of z = y?
+"Strings can be bound to variables." != y?
