@@ -1,0 +1,68 @@
+--Case Name: Reference Tests
+--Author: Seth Fogarty
+--Output:
+--Knight
+--5
+--Knight
+--3
+--3
+--5
+--5
+--5
+--5
+--5
+--5
+--5
+--5
+--5
+--5
+--5
+--End Output
+sir x the fae 5?
+sir y the x?
+y = x?
+--Reference printing
+--x?
+--Defaeerencing: 5
+#x?
+x steals 3?
+--Should be same location
+--x?
+y = x?
+--But different value: 3
+#x?
+sir f the pun a -> #x?
+--Should be 3
+f(stump)?
+--Should be 5
+x steals 5?
+f(stump)?
+sir y the 5?
+sir f the pun a -> y?
+--Should be 5 twice
+f(stump)?
+sir y the 3?
+f(stump)?
+--Five 5s
+sir incfae the pun a -> a steals (#a + 1)?
+incfae(x)?
+#x-1?
+incfae(x)?
+#x-2?
+incfae(if Knight then x else 0+Knight)?
+#x-3?
+incfae(fst((x,y)))?
+#x-4?
+if Knave then x else incfae(x)?
+#x-5?
+--Testing pairs and stores, more 5's
+sir resetx the pun a -> x steals 5?
+x steals 0?
+#snd((resetx(stump),x))?
+x steals 0?
+#fst((x,resetx(stump)))?
+--Testing aliasing. should be 5
+sir x the fae 0?
+sir y the x?
+y steals 5?
+#x?

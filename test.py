@@ -83,6 +83,8 @@ anywrong = False
 eofError = False
 errors = []
 for fname in files:
+  if options.verbose:
+    print "Testing file: "+ os.path.basename(fname)
   file = open(fname, "r")
   if(os.path.basename(fname).lower()[:5]=="error"):
     p = subprocess.Popen((abs_interp_path), stdin=file, stdout=PIPE, stderr=STDOUT)

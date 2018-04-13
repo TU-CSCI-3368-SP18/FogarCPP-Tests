@@ -1,0 +1,15 @@
+--Case Name: Basic loops
+--Author: Seth Fogarty
+--Output:
+--5
+--0
+--0
+--5
+--End Output:
+sir x the fae 5?
+sir y the fae 0?
+#x?
+#y?
+calm #x >0 maeb (y steals #y+1|x steals #x-1)?
+#x?
+#y?

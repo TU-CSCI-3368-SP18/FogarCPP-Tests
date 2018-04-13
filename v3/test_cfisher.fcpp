@@ -1,0 +1,35 @@
+--Case Name: Precedence
+--Author: Corey Fisher
+--Output:
+--1
+--3
+--3
+--9
+--End Output
+sir y the fae 0?
+sir incYByN the pun n -> y steals #y + n?
+sir i the fae 0?
+sir j the fae 0?
+--Testing loop precdence vs sequencing.
+calm #i < 3
+maeb i steals #i+1 | 
+j steals #j+1?
+--j should be 1, not 3.
+#j?
+j steals 0?
+i steals 0?
+--Testing nested calm loops
+calm #i < 3
+maeb ( j steals 0 |
+       calm #j < 3
+       maeb ( incYByN(#i) |
+              j steals #j + 1
+            ) |
+       i steals #i + 1
+     )?
+--Should be 3
+#i?
+--Should be 3
+#j?
+--Should be 9
+#y?

@@ -1,0 +1,28 @@
+--Case Name: String Tests
+--Author: Seth Fogarty
+--Output:
+--1
+--1
+--5
+--5
+--5
+--5
+--End Output
+sir x the fae 0?
+sir incfae the pun a -> a steals (#a + 1)?
+sir maybeInc the pun c -> pun r -> if c then r steals (#r + 1) else stump?
+--2 1's
+maybeInc(Knight)(x)?
+#x?
+maybeInc(Knave)(x)?
+#x?
+--Some 5's, testing sequencing
+x steals 0?
+(x steals 5 | 3) + 2?
+#x?
+x steals 0?
+sir resetx the pun a -> x steals 5?
+if (resetx(stump) | Knight) then #x else #x?
+x steals 0?
+1 + if (resetx(stump) | Knave) then #x else #x -1?
+x steals 0?

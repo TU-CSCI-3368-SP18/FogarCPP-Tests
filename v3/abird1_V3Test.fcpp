@@ -1,0 +1,47 @@
+--Case Name: Hungry birds.
+--Author: Alexa Bird
+--Output:
+--Knight
+--0
+--"Hungry"
+--l0
+--l1
+--Knave
+--12
+--"full"
+--End Output
+sir numWormsBirdAte the fae 0?
+
+sir birdFull the Knave?
+
+sir birdHungry the Knight?
+
+sir birdState the fae birdHungry?
+
+sir eatWorms the pun x -> numWormsBirdAte steals #numWormsBirdAte + x?
+
+
+--Worm num loc
+--numWormsBirdAte?
+--BirdState loc
+--birdState?
+#birdState?
+--Num worms
+#numWormsBirdAte?
+--Is bird hungry or full
+if (#birdState = Knight) then "Hungry" else "full"?
+
+--bird is going to eat will be full after 10 worms
+
+calm (#birdState) 
+maeb (eatWorms(2) | if (#numWormsBirdAte > 10) then (birdState steals birdFull) else (birdState steals birdHungry)) ?
+
+--Worm num loc
+numWormsBirdAte?
+--BirdState loc
+birdState?
+#birdState?
+--Num worms
+#numWormsBirdAte?
+--Is bird hungry or full
+if (#birdState = Knight) then "Hungry" else "full"?

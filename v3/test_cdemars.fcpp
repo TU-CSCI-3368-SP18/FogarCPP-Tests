@@ -1,0 +1,36 @@
+--Case Name: Kittens and Mice
+--Author: Camille DeMars
+--Output:
+--0
+--10
+--15
+--12
+---2730
+--End Output
+sir x the fae 0?
+--Print the reference
+--x?
+--How about the value? is it 0?
+#x?
+
+
+calm (#x<10) maeb sir y the  2 of x steals #x+y?
+--is it now 11?
+#x?
+
+--Let's try some sequencing
+sir kitten the fae 15?
+sir mouse the fae -1?
+#kitten?
+calm #kitten > 12 maeb 
+(
+    mouse steals #mouse * #kitten |
+    kitten steals #kitten -1
+)?
+
+--Is kitten 12?
+#kitten?
+--Is mouse -2730?
+#mouse?
+
+--Hooray#

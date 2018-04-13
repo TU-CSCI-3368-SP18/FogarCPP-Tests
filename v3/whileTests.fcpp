@@ -1,0 +1,23 @@
+--Case Name: While loops
+--Author: Seth Fogarty
+--Output:
+--5
+--(4, (3, (2, (1, (0, stump)))))
+--5
+--(4, (3, (2, (1, (0, stump)))))
+--End Output
+sir x the fae 0?
+
+calm #x < 5 maeb x steals #x + 1?
+--This should be 5
+#x?
+--Lets do a multi-expression while loop#
+sir x the fae 0?
+sir y the fae stump? 
+calm #x < 5 maeb ( y steals (#x,#y) | x steals #x + 1 )?
+--This should be the list from 4 to 0
+#y?
+sir x the fae 0?
+sir y the fae stump?
+sir x the calm #x < 5 maeb (y steals (#x,#y) | x steals #x + 1 ) | x of #x?
+#y?
