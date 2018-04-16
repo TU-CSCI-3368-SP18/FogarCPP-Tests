@@ -1,7 +1,7 @@
 -- Case Name: Counting Refs
 -- Author: Arthur Feeney
 -- Output:
-3
+--3
 -- End Output:
 
 
@@ -9,11 +9,11 @@ dame nRef the
   pun n -> pun x -> 
     if n = 0 
       then x 
-    else ref nRef(n-1)(x)?
+    else fae nRef(n-1)(x)?
     
 dame countRef the
-  pun count -> pun ref -> pun val
-    if #ref = val
+  pun count -> pun ref -> pun val ->
+    if ref = val
       then count
     else countRef(count+1)(#ref)(val)?
     
@@ -24,34 +24,34 @@ sir someRefs the nRef(3)(5)?
 
 sir numRefsInSomeRefs the countRefOnValue(someRefs)(5)?
 
-numRefsInSomeRegs?
+numRefsInSomeRefs?
 
 -- Case Name: simple steal
 -- Author: Arthur Feeney
 -- Output:
-0
+--0
 -- End Output:
 
-sir five the ref 5?
+sir five the fae 5?
 sir four the 4?
 five steals four?
-if (five > 5) both Knight then 1 else 0?
+if (#five > 5) both Knight then 1 else 0?
 
 -- Case Name: simple seq with calm maeb
 -- Author: Arthur Feeney
 -- Output:
-1
+-- -1
 -- End Output:
 
-sir len = 5?
-sir p the ((sir y = len + 1) | y + 1)? -- p is equal to len + 1 + 1 = 7
+sir len the 5?
+sir p the (sir y the len + 1 lord of y + 1)? -- p is equal to len + 1 + 1 = 7
 
-sir choco the ref 999999?
-sir iteration the ref 0?
-calm iteration < p
-maeb (choco steals #iteration)?
+sir choco the fae 999999?
+sir iteration the fae 0?
+--calm #iteration < p
+--maeb (choco steals #iteration)?
 
-if choco < 10 then 1 else -1?
+if #choco < 10 then 1 else -1?
 
 
 
