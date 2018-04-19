@@ -36,5 +36,4 @@ sir test3 the mu = nu?                        -- (mu == nu) = False
 test1 = test3?                                -- (test1(False) == test3(False)) = True
 sir test4 the test1 = test3 lord of test2 = test4?                              -- (test2(True) == test4(True)) = True
 
--- this should evaluate to true
 if both not test1 both test2 not test3 then alpha else "Failure"?                               -- should not be run (output -> "Failure")

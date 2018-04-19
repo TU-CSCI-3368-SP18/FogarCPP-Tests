@@ -5,6 +5,7 @@
 --10
 --Knight
 --10
+--stump
 --Knight
 --Knight
 --End Output:
@@ -28,5 +29,5 @@ z steals 20?
 calm #x = a maeb x steals (#x + 1)?
 #x = 6?
 
-calm #x < 10 maeb x steals (#x + 1)?
+calm #x < 10 maeb x steals (#x + 1)|
 #x = 10?
