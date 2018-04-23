@@ -1,0 +1,104 @@
+sir lie the Knave?
+sir truth the knight?
+sir hi the "hello"?
+
+
+--Case Name: If else then
+--Author: Ian Witecki
+--Output:
+-- "hello"
+--End Output:
+if (truth) then hi else "incorrect"?
+
+
+--Case Name: String Equality 
+--Author: Ian Witecki
+--Output:
+-- Knight
+-- Knave
+--End Output:
+"cat" = "cat"?
+"cat" != "cat"?
+
+
+--Case Name: Comparing Numbers
+--Author: Ian Witecki
+--Output:
+-- Knight
+-- Knight
+-- Knave
+-- Knight
+-- Knight
+-- Knight
+-- Knight
+--End Output:
+7 < 10.0?
+7.0 < 10?
+7.0 < 7?
+7 <= 7?
+7.0 = 7.0?
+8.0 >= 7.0?
+8 > 5?
+
+
+--Case Name: Sir MathChecker
+--Author: Ian Witecki
+--Output:
+-- Knight
+--End Output:
+sir var0 the 0 lord of (if (((~9.6)^2) - 10^(~1.6) = var0) then truth else lie)?
+
+
+--Case Name: Both, One, Not
+--Author: Ian Witecki
+--Output:
+-- "correct"
+-- "correct"
+-- "correct"
+-- "correct"
+-- "correct"
+--End Output:
+if (truth one lie) then "correct" else "wrong"?
+if (not lie) then "correct" else "wrong"?
+if (not truth) then "wrong" else "correct"?
+if (truth both truth) then "correct" else "wrong"?
+if (lie both truth) then "wrong" else "correct"?
+
+
+--Case Name: Simple Function
+--Author: Ian Witecki
+--Output:
+-- 5
+--End Output:
+sir simple the pun x -> x?
+simple(5)?
+
+--Case Name: The Recursive Dame Fib
+--Author: Ian Witecki
+--Output:
+-- 5
+--End Output:
+dame fib the pun x -> if x = 0 then 0 else if x = 1 then 1 else fib(x-1) + fib(x-2)?
+fib(5)?
+
+--Case Name: Pairs
+--Author: Ian Witecki
+--Output:
+-- 1 
+-- 2
+--End Output:
+sir pair the (1,2)?
+fst(pair)?
+snd(pair)?
+
+--Case Name: Recursion and sum
+--Author: Ian Witecki
+--Output:
+--Knight
+--Knave
+--End Output:
+sir lstB the (knight,(knight, (knight, (knight, (knight, stump)))))?
+sir lstA the (knight,(knight, (knight, (knight, (knave, stump)))))?
+dame rover the pun xs -> if (xs = stump) then knight else if (fst(xs) = knight) then rover(snd(xs)) else knave?
+rover(lstB)?
+rover(lstA)?
