@@ -1,58 +1,37 @@
--- Case Name: Counting Refs
+
+
+-- Case Name: simp loop with fae and ward
 -- Author: Arthur Feeney
 -- Output:
---3
+-- 1000
 -- End Output:
 
+sir x the fae 5?
 
-dame nRef the 
-  pun n -> pun x -> 
-    if n = 0 
-      then x 
-    else fae nRef(n-1)(x)?
-    
-dame countRef the
-  pun count -> pun ref -> pun val ->
-    if ref = val
-      then count
-    else countRef(count+1)(#ref)(val)?
-    
-sir countRefOnValue the
-  pun ref -> pun val -> countRef(0)(ref)(val)?
-    
-sir someRefs the nRef(3)(5)?
+calm #x < 1000
+maeb x steals (#x + 1)?
 
-sir numRefsInSomeRefs the countRefOnValue(someRefs)(5)?
+#x?
 
-numRefsInSomeRefs?
-
--- Case Name: simple steal
+-- Case Name: simple seq with ref
 -- Author: Arthur Feeney
 -- Output:
---0
+-- "yo"
 -- End Output:
 
-sir five the fae 5?
-sir four the 4?
-five steals four?
-if (#five > 5) both Knight then 1 else 0?
+sir x the fae "hi"?
+x steals "yo" | #x ?
 
--- Case Name: simple seq with calm maeb
+
+-- Case Name: Loop with A Seq In It.
 -- Author: Arthur Feeney
 -- Output:
--- -1
+1022
 -- End Output:
 
-sir len the 5?
-sir p the (sir y the len + 1 lord of y + 1)? -- p is equal to len + 1 + 1 = 7
+sir x the fae 0?
 
-sir choco the fae 999999?
-sir iteration the fae 0?
---calm #iteration < p
---maeb (choco steals #iteration)?
+calm #x < 1000
+maeb x steals (#x + 1) | x steals (#x * 2)?
 
-if #choco < 10 then 1 else -1?
-
-
-
-
+#x?
