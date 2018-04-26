@@ -3,10 +3,12 @@
 -- Output:
 --Knight
 --10
+--stump
 --Knight
 --10
 --stump
 --Knight
+--stump
 --Knight
 --End Output:
 
@@ -18,13 +20,13 @@ sir a the #x?
 sir b the #y?
 sir c the #z?
 
-#y/#z = #z?
-#y/c?
+#y//#z = #z?
+#y//c?
 
 z steals 20?
 
-#y/#z = #x?
-#y/c?
+#y//#z = #x?
+#y//c?
 
 calm #x = a maeb x steals (#x + 1)?
 #x = 6?
