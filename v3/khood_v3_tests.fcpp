@@ -1,0 +1,30 @@
+-- Case Name: Fae Steals In Sequence
+-- Author: Kayla Hood
+-- Output:
+-- Test Stealing 1
+-- Success
+-- Test Stealing 2
+-- Success
+-- Success
+--End Output:
+
+sir thief the "Test Stealing 1"?
+thief?
+sir fairy the (thief steals "Success" | fae thief)?
+#fairy?
+thief steals "Test Stealing 2" | #fairy?
+thief steals "Success" | fairy steals thief | fairy?
+fairy steals fae thief | #fairy?
+
+-- Case Name: Call Me Maybe
+-- Author: Kayla Hood
+-- Output:
+-- I Just Met You
+-- And This Is Crazy
+-- But Here's My Number
+-- So Call Me Maybe
+--End Output:
+
+sir callMeMaybeLines the pun i -> sir idx the (i % 4) lord of if (idx = 0) then "I Just Met You" else if (idx = 1) then "And This Is Crazy" else if (idx = 2) then "But Here's My Number" else if (idx = 3) then "So Call Me Maybe" else "Hey"?
+sir x the 0?
+calm (x < 4) maeb (callMeMaybeLines(x) | x steals (x + 1))?
