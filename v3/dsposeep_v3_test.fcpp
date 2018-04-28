@@ -5,7 +5,7 @@
 --5
 --(20,-10)
 --55
---(5,(6,(7,(8,(9,(10,stump))))))
+--(5,(6,(4,(7,(3,(8,(2,(9,(1,(10,stump))))))))))
 --End Output
 
 sir x the fae (1, (2, (3, (4, (5, stump)))))?
@@ -29,6 +29,6 @@ x steals (1, (2, (3, (4, (5, stump)))))?
 y steals (10, (9, (8, (7, (6, stump)))))?
 sir tmp the fae stump?
 calm (#x != stump)
-maeb ( if #tmp = stump then tmp steals (fst(#x), (fst(#y), stump))
-else tmp steals (fst(#x), (fst(#y), snd(#tmp))) | x steals snd(#x) | y steals snd(#y))?
+maeb (if #tmp = stump then tmp steals (fst(#x), (fst(#y), stump))
+else tmp steals (fst(#x), (fst(#y), #tmp)) | x steals snd(#x) | y steals snd(#y))?
 #tmp?
