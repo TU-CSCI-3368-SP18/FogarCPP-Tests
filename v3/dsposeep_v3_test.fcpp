@@ -1,5 +1,6 @@
 --Case Name: V3 Tests
 --Author: Drew Sposeep
+--Output:
 --(1,(2,(3,(4,(5,stump)))))
 --5
 --(20,-10)
@@ -29,5 +30,5 @@ y steals (10, (9, (8, (7, (6, stump)))))?
 sir tmp the fae stump?
 calm (#x != stump)
 maeb ( if #tmp = stump then tmp steals (fst(#x), (fst(#y), stump))
-else tmp steals (fst(#x), (fst(#y), snd(#tmp)))  | x steals snd(#x) | y steals snd(#y)      )?
+else tmp steals (fst(#x), (fst(#y), snd(#tmp))) | x steals snd(#x) | y steals snd(#y))?
 #tmp?
