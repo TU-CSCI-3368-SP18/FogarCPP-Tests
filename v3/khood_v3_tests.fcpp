@@ -25,10 +25,10 @@ fairy steals (4,2) | fst #fairy + snd #fairy?
 -- Case Name: Call Me Maybe
 -- Author: Kayla Hood
 -- Output:
--- I Just Met You
--- And This Is Crazy
--- But Here's My Number
--- So Call Me Maybe
+-- "I Just Met You"
+-- "And This Is Crazy"
+-- "But Here's My Number"
+-- "So Call Me Maybe"
 --End Output:
 
 sir callMeMaybeLines the pun i -> sir idx the (i % 4) lord of if (idx = 0) then "I Just Met You" else if (idx = 1) then "And This Is Crazy" else if (idx = 2) then "But Here's My Number" else if (idx = 3) then "So Call Me Maybe" else "Hey"?
