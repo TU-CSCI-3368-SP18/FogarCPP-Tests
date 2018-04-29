@@ -26,7 +26,7 @@ x steals "yo" | #x ?
 -- Case Name: Loop with A Seq In It.
 -- Author: Arthur Feeney
 -- Output:
-1022
+-- 2000
 -- End Output:
 
 sir x the fae 0?
