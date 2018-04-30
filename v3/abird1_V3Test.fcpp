@@ -10,6 +10,7 @@
 --12
 --"full"
 --End Output
+
 sir numWormsBirdAte the fae 0?
 
 sir birdFull the Knave?
@@ -18,7 +19,7 @@ sir birdHungry the Knight?
 
 sir birdState the fae birdHungry?
 
-sir eatWorms the pun x -> numWormsBirdAte steals #numWormsBirdAte + x?
+sir eatWorms the pun x -> (numWormsBirdAte steals #numWormsBirdAte + x)?
 
 
 --Worm num loc
