@@ -25,9 +25,6 @@ fairy steals (4,2) | fst #fairy + snd #fairy?
 -- Case Name: Call Me Maybe
 -- Author: Kayla Hood
 -- Output:
--- "I Just Met You"
--- "And This Is Crazy"
--- "But Here's My Number"
 -- "So Call Me Maybe"
 --End Output:
 
