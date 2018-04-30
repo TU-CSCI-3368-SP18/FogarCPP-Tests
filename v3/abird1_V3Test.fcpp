@@ -4,8 +4,8 @@
 --Knight
 --0
 --"Hungry"
---l0
---l1
+--Knight
+--Knave
 --Knave
 --12
 --"full"
@@ -36,10 +36,12 @@ if (#birdState = Knight) then "Hungry" else "full"?
 calm (#birdState) 
 maeb (eatWorms(2) | if (#numWormsBirdAte > 10) then (birdState steals birdFull) else (birdState steals birdHungry)) ?
 
+sir tmp the numWormsBirdAte?
+tmp = numWormsBirdAte?
 --Worm num loc
-numWormsBirdAte?
 --BirdState loc
-birdState?
+sir tmp2 the fae (#birdState)?
+tmp2 = birdState?
 #birdState?
 --Num worms
 #numWormsBirdAte?
