@@ -34,4 +34,5 @@ fairy steals (4,2) | fst #fairy + snd #fairy?
 sir callMeMaybeLines the pun i -> sir idx the (i % 4) lord of if (idx = 0) then "I Just Met You" else if (idx = 1) then "And This Is Crazy" else if (idx = 2) then "But Here's My Number" else if (idx = 3) then "So Call Me Maybe" else "Hey"?
 sir x the 0?
 sir printy the fae ""?
-calm (x < 4) maeb (printy steals callMeMaybeLines(x) | #printy | x steals (x + 1))?
+calm (x < 4) maeb (printy steals callMeMaybeLines(x) | x steals (x + 1))?
+#printy?
