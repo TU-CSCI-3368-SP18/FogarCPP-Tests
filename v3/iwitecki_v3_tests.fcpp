@@ -1,0 +1,71 @@
+--Case Name: Stealing Fae
+--Author: Ian Witecki
+--Output:
+-- 8
+-- 7
+-- Knight
+-- Knight
+--End Output:
+sir x the fae 8?
+sir z the x?
+sir y the 7?
+#x?
+x steals y?
+#x?
+#x = y?
+z = x?
+
+
+
+--Case Name: Fae Pipes
+--Author: Ian Witecki
+--Output:
+-- 4
+-- 5
+--End Output:
+1 | 2 | 3 | 4?
+sir four the pun a -> x steals 4?
+sir five the pun a -> x steals 5?
+sir pipes the pun f1 -> pun f2 -> pun x -> f1(x) | f2(x) | #x?
+pipes(four)(five)(x)?
+
+
+--Case Name: Piping Pairs
+--Author: Ian Witecki
+--Output:
+--10
+--10 
+--End Output:
+sir first the fae 0?
+sir second the fae 1?
+sir p the ( first steals 10 | #first, second steals #first | #second )?
+fst(p)?
+snd(p)?
+
+--Case Name: Count to Ten Maeb
+--Author: Ian Witecki
+--Output:
+-- 10 
+--End Output:
+sir i the fae 0?
+calm ( #i < 10 ) maeb i steals #i + 1?
+#i?
+
+--Case Name: Both, One, Not Check
+--Author: Ian Witecki
+--Output:
+-- "correct"
+-- "correct"
+-- "correct"
+-- "correct"
+-- "correct"
+--End Output:
+sir truth the Knight?
+sir lie the Knave?
+if (truth one lie) then "correct" else "wrong"?
+if (not lie) then "correct" else "wrong"?
+if (not truth) then "wrong" else "correct"?
+if (truth both truth) then "correct" else "wrong"?
+if (lie both truth) then "wrong" else "correct"?
+
+
