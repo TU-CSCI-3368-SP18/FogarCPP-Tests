@@ -66,6 +66,10 @@ elif options.verbose:
   print "Executable found, skipping MAKE"
 
 if not os.path.isfile(os.getcwd() + "/" + interp_name):
+    make = subprocess.check_call("make") 
+    make = subprocess.check_call(["ghc", "-o", "testInterp", "Repl.hs"])
+
+if not os.path.isfile(os.getcwd() + "/" + interp_name):
   sys.exit('Executable cannot be found or made.')
 
 # Grab all files from the $FCPPTESTS directory that are of the proper format

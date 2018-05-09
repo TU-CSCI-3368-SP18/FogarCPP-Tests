@@ -1,0 +1,16 @@
+--Case Name: First-Class Fst/Snd Tests
+--Author: Seth Fogarty
+--Output:
+--7
+--(3, (2, stump))
+--(2, stump)
+--Knight
+--End Output:
+sir lst the (7,(3,(2,stump)))?
+sir head the fst?
+head(lst)?
+sir tail the snd?
+tail(lst)?
+sir twice the pun f -> pun lst -> f(f(lst))?
+twice(tail)(lst)?
+stump=tail(tail(tail(lst)))?
