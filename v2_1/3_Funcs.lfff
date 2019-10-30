@@ -1,0 +1,45 @@
+"--Case Name: Function Tests"~
+"--Author: Seth Fogarty"~
+"--Output:"~
+"--5"~
+"--5"~
+"--5"~
+"--5"~
+"--5"~
+"--5"~
+"--5.0"~
+"--5"~
+"--5"~
+"--5"~
+"--Alive"~
+"--Alive"~
+"--Dead"~
+"--Dead"~
+"--Dead"~
+"--Dead"~
+"--End Output:"~
+"--defining some basic punctions"~
+Conway inc = Funk x -> x + 1 ~
+Conway dec = Funk x -> x - 1 ~
+Conway andF = Funk x -> Funk y -> If x Then y Else Dead ~
+Conway notF = Funk x -> If x Then Dead Else Alive ~
+"--these should be 5 or 5.0"~
+inc(4)~
+inc(inc(3))~
+inc(3 + 1)~
+1 + inc(3)~
+dec(inc(5))~
+Cell x = inc(5) Near dec(x)~
+dec(If inc(5) < 6 Then 0.0 Else 6.0)~
+(If 3 < 2 Then dec Else inc)(4)~
+Conway bestpun = Funk x -> If x < 5 Then inc Else dec ~
+bestpun(4)(4)~
+bestpun(6)(6)~
+"--these should be Alive"~
+notF(Dead)~
+andF(Alive)(Alive)~
+"--these should be Dead"~
+notF(Alive)~
+andF(Dead)(Dead)~
+andF(Dead)(Alive)~
+andF(Alive)(Dead)~

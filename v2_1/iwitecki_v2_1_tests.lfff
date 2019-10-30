@@ -1,0 +1,89 @@
+Conway lie = Dead ~
+Conway truth = Alive ~
+Conway hi = "hello" ~
+"--Case Name: If else then"~
+"--Author: Ian Witecki"~
+"--Output:"~
+"-- hello"~
+"--End Output:"~
+If (truth) Then hi Else "incorrect"~
+"--Case Name: String Equality "~
+"--Author: Ian Witecki"~
+"--Output:"~
+"-- Alive"~
+"-- Dead"~
+"--End Output:"~
+"cat" = "cat"~
+"cat" != "cat"~
+"--Case Name: Comparing Numbers"~
+"--Author: Ian Witecki"~
+"--Output:"~
+"-- Alive"~
+"-- Alive"~
+"-- Dead"~
+"-- Alive"~
+"-- Alive"~
+"-- Alive"~
+"-- Alive"~
+"--End Output:"~
+7 < 10.0~
+7.0 < 10~
+7.0 < 7~
+7 <= 7~
+7.0 = 7.0~
+8.0 >= 7.0~
+8 > 5~
+"--Case Name: Sir MathChecker"~
+"--Author: Ian Witecki"~
+"--Output:"~
+"-- Alive"~
+"--End Output:"~
+Cell var0 = 0 Near (If (((Round 9.6) ^ 2) - 10 ^ (Round 1.6) = var0) Then truth Else lie)~
+"--Case Name: Both, One, Not"~
+"--Author: Ian Witecki"~
+"--Output:"~
+"-- correct"~
+"-- correct"~
+"-- correct"~
+"-- correct"~
+"-- correct"~
+"--End Output:"~
+If (truth Or lie) Then "correct" Else "wrong"~
+If (Not lie) Then "correct" Else "wrong"~
+If (Not truth) Then "wrong" Else "correct"~
+If (truth And truth) Then "correct" Else "wrong"~
+If (lie And truth) Then "wrong" Else "correct"~
+"--Case Name: Simple Function"~
+"--Author: Ian Witecki"~
+"--Output:"~
+"-- 5"~
+"--End Output:"~
+Conway simple = Funk x -> x ~
+simple(5)~
+"--Case Name: The Recursive Dame Fib"~
+"--Author: Ian Witecki"~
+"--Output:"~
+"-- 5"~
+"--End Output:"~
+Blink fib = Funk x -> If x = 0 Then 0 Else If x = 1 Then 1 Else fib(x - 1) + fib(x - 2) ~
+fib(5)~
+"--Case Name: Pairs"~
+"--Author: Ian Witecki"~
+"--Output:"~
+"-- 1 "~
+"-- 2"~
+"--End Output:"~
+Conway pair = (1 | 2) ~
+lft(pair)~
+rgt(pair)~
+"--Case Name: Recursion and sum"~
+"--Author: Ian Witecki"~
+"--Output:"~
+"--Alive"~
+"--Dead"~
+"--End Output:"~
+Conway lstB = (Alive | (Alive | (Alive | (Alive | (Alive | Trunk))))) ~
+Conway lstA = (Alive | (Alive | (Alive | (Alive | (Dead | Trunk))))) ~
+Blink rover = Funk xs -> If (xs = Trunk) Then Alive Else If (lft(xs) = Alive) Then rover(rgt(xs)) Else Dead ~
+rover(lstB)~
+rover(lstA)~

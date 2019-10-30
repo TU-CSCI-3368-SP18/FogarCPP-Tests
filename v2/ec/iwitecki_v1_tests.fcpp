@@ -68,8 +68,8 @@ sir var0 the 0 lord of (if (((~9.6)^2) - 10^(~1.6) = var0) then truth else lie)?
 -- "correct"
 -- "correct"
 --End Output:
-if (one truth lie) then "correct" else "wrong"?
+if (truth one lie) then "correct" else "wrong"?
 if (not lie) then "correct" else "wrong"?
 if (not truth) then "wrong" else "correct"?
-if (both truth truth) then "correct" else "wrong"?
-if (both lie truth) then "wrong" else "correct"?
+if (truth both truth) then "correct" else "wrong"?
+if (lie both truth) then "wrong" else "correct"?

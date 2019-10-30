@@ -1,0 +1,22 @@
+"--Manual Test Cases"~
+Conway x = (3 | 2) ~
+Conway y = (2 | 3) ~
+"These should return an error"~
+x < y~
+x > y~
+Conway leaf = ("Leaf" | Trunk) ~
+Conway comment = "Function to raise an error" ~
+Conway error = Funk x -> Alive < 3 ~
+Conway comment = "Function to get values and children of a node" ~
+Conway val = Funk tree -> If lft(tree) = "Leaf" Then error(0) Else lft(rgt(tree)) ~
+Conway lft = Funk tree -> If lft(tree) = "Leaf" Then error(0) Else lft(rgt(rgt(tree))) ~
+Conway rgt = Funk tree -> If lft(tree) = "Leaf" Then error(0) Else rgt(rgt(rgt(tree))) ~
+"Child of a leaf: should be an error"~
+rgt(leaf)~
+"Lets try to do that list of natural numbers. doesn't work for me, but if it does for you, let me know"~
+Conway head = Funk lst -> lft(lst) ~
+Conway tail = Funk lst -> rgt(lst) ~
+Blink take = Funk n -> Funk lst -> If n = 0 Then Trunk Else (head(lst) | take(n - 1)(tail(lst))) ~
+Blink infinc = Funk lst -> (head(lst) + 1 | infinc(tail(lst))) ~
+Blink natnums = (1 | infinc(natnums)) ~
+take(10)(natnums)~

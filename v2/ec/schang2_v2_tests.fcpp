@@ -14,12 +14,12 @@ sir option2 the "I think we are not supposed to"?
 sir chooseoption1 the Knight?
 sir chooseoption2 the knave?
 
-if (both chooseoption1 chooseoption2) then "impossible to decide" else "possible to choose"?
-if (one chooseoption1 chooseoption2) then "possible to decide" else "impossible to choose"?
+if (chooseoption1 both chooseoption2) then "impossible to decide" else "possible to choose"?
+if (chooseoption1 one chooseoption2) then "possible to decide" else "impossible to choose"?
 
 sir var120 the 20 + 4 * 5 ^ 2?
 sir var9 the ~((232.23 - (23 // 3)) ^ 2) % 10?
 
 if (var9 >= var120) then "wrong" else "ok"?
-if (var9 < var120) then (sir foo the knave lord of (sir bar the knight lord of both foo bar)) else "boo"?
-if (var9 < var120) then (sir foo the knave lord of (sir bar the knight lord of one bar (bar = foo))) else "boo"?
+if (var9 < var120) then (sir foo the knave lord of (sir bar the knight lord of foo both bar)) else "boo"?
+if (var9 < var120) then (sir foo the knave lord of (sir bar the knight lord of bar one (bar = foo))) else "boo"?

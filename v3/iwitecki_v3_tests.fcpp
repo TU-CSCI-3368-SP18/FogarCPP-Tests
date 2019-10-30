@@ -26,7 +26,7 @@ z = x?
 1 | 2 | 3 | 4?
 sir four the pun a -> x steals 4?
 sir five the pun a -> x steals 5?
-sir pipes the pun f1 -> pun f2 -> pun x -> f1(x) | f2(x) | #x?
+sir pipes the pun f1 -> (pun f2 -> (pun x -> (f1(x) | f2(x) | #x)))?
 pipes(four)(five)(x)?
 
 

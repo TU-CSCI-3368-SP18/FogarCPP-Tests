@@ -1,0 +1,41 @@
+"--Case Name: Recursive Function Tests"~
+"--Author: Seth Fogarty"~
+"--Output:"~
+"--5"~
+"--5"~
+"--5"~
+"--5"~
+"--5"~
+"--5"~
+"--Alive"~
+"--Alive"~
+"--Alive"~
+"--Alive"~
+"--This might pop the stack, or just take a while"~
+"--5"~
+"--End Output:"~
+"--some basic recursive punctions"~
+Conway inc = Funk x -> x + 1 ~
+Conway dec = Funk x -> x - 1 ~
+Conway bestpun = Funk x -> If x < 5 Then inc Else dec ~
+Conway bestnum = Funk x -> If x < 5 Then 5 - x Else x - 5 ~
+Blink applyNTimes = Funk f -> Funk n -> Funk x -> If n = 0 Then x Else applyNTimes(f)(n - 1)(f(x)) ~
+Blink applyNTimes2 = Funk f -> Funk n -> If n = 1 Then f Else Funk x -> f(applyNTimes2(f)(n - 1)(x)) ~
+Conway sum = applyNTimes(inc) ~
+Conway sub = applyNTimes2(dec) ~
+Conway fixnum = Funk x -> Cell fn = (bestpun(x) | bestnum(x)) Near applyNTimes(lft(fn))(rgt(fn))(x) ~
+"-- These should be 5"~
+fixnum(10)~
+fixnum(2)~
+fixnum(0)~
+fixnum(5)~
+fixnum(Not 10)~
+fixnum(Not 200)~
+"-- These should be true"~
+sum(3)(2) = sub(2)(7)~
+sum(8)(2) = sum(15)(Not 5)~
+Blink fact = Funk x -> If x = 1 Then 1 Else x * fact(x - 1) ~
+fact(3) = 6~
+fact(10) = 3628800~
+"This might pop the stack, or just take a while"~
+fixnum(Not 500000)~

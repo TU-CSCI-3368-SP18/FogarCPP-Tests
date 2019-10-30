@@ -13,8 +13,8 @@ sir foo the "foo"?
 sir bar the "bar"?
 sir start the 0?
 sir end the 10?
-sir good the (both (2^5 = 32) (one knight knave))?
-sir bad the (one (both (7%5 = 2) (~pi > 3)) (if good then (both knight knave) else (not knave)))?
+sir good the ((2^5 = 32) both (knight one knave))?
+sir bad the (((7%5 = 2) both (~pi > 3)) one (if good then (knight both knave) else (not knave)))?
 
 if foo = bar then bad else good?
 if bar != bar then bad else good?
@@ -22,9 +22,9 @@ if bar != bar then bad else good?
 sir tmp the 5 of ((((tmp-3)^4)%3 + tmp)/3) * ((start-5)/2) - ((-1*end)//5)?
 sir tmp the 0.009 of tmp*tmp + 100*tmp -tmp?
 
-if (foo != bar) then (if one bad good then 99 else 0) else 0?
+if (foo != bar) then (if bad one good then 99 else 0) else 0?
 
 sir why the ((5%3)^3)*(8//4) >= 2^2^2?
-sir me the if 5%4 != 5^0 then knight else both (if good then 10^2 = 98%99+2 else knave) (one (0.05 < 1/21) (8 > 2^3))?
+sir me the if 5%4 != 5^0 then knight else (if good then 10^2 = 98%99+2 else knave) both ((0.05 < 1/21) one (8 > 2^3))?
 
-if (not why) then (not why) else if (not not (both why me)) then (not why) else if one me (not why) then (not why) else both (not me) if (both why me) then (not why) else (one why me)?
+if (not why) then (not why) else if (not not (why both me)) then (not why) else if me one (not why) then (not why) else (not me) both if (why both me) then (not why) else (why one me)?

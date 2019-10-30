@@ -16,12 +16,12 @@ sir sixteenFact the 16 * 15 * 14 * 13 * 12 * 11 * tenFact?
 
 sir sixteenChooseSix the ~(sixteenFact / (sixFact * tenFact))?
 
-if (both (not (sixFact > tenFact)) (tenFact < sixteenFact)) then sixteenChooseSix * 2 else 1?
+if ((not (sixFact > tenFact)) both (tenFact < sixteenFact)) then sixteenChooseSix * 2 else 1?
 
 
 sir two the 2 lord of sixteenChooseSix + two?
 
-if (both Knight (not (both Knave (not Knave)))) then 0 else 1?
+if (Knight both (not (Knave both (not Knave)))) then 0 else 1?
 
 sir valour the Knight lord of if valour then not Knave else Knave?
 

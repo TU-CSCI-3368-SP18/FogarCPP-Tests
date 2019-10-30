@@ -1,0 +1,45 @@
+"--Case Name: V3 test program"~
+"--Author: Drew Sposeep"~
+"--Output: "~
+"--5"~
+"--3"~
+"--(5|6)"~
+"--(hi|,)"~
+"--(how|are)"~
+"--(you|?)"~
+"--9990"~
+"--9990"~
+"--Alive"~
+"--Alive"~
+"--It's even!"~
+"--It's odd!"~
+"--Alive"~
+"--112"~
+"--128"~
+"--150"~
+"--101"~
+"--0"~
+"--End output"~
+Conway count = (1 | (2 | (3 | (4 | (5 | 6))))) ~
+lft(rgt(rgt(rgt(rgt(count)))))~
+lft(rgt(rgt(count)))~
+rgt(rgt(rgt(rgt(count))))~
+Conway scramble = (1 | (7 | ("you" | (2 | ("are" | (4 | ("," | (3 | ("how" | (6 | ("?" | (5 | "hi")))))))))))) ~
+(rgt(rgt(rgt(rgt(rgt(rgt(rgt(rgt(rgt(rgt(rgt(rgt(scramble)))))))))))) | lft(rgt(rgt(rgt(rgt(rgt(rgt(scramble))))))))~
+(lft(rgt(rgt(rgt(rgt(rgt(rgt(rgt(rgt(scramble))))))))) | lft(rgt(rgt(rgt(rgt(scramble))))))~
+(lft(rgt(rgt(scramble))) | lft(rgt(rgt(rgt(rgt(rgt(rgt(rgt(rgt(rgt(rgt(scramble))))))))))))~
+Conway fun = Funk x -> (10 * x) ^ 2 - 10 ~
+fun(10)~
+fun(Not 10)~
+fun(0.5) = fun(Not 0.5)~
+fun(0.5) = fun(Not 0.5) And fun(Not 0.5) = 15.0~
+Conway evenCheck = Funk x -> If x % 2 = 0 Then "It's even!" Else "It's odd!" ~
+evenCheck(888)~
+evenCheck(787)~
+evenCheck(9.9) = "It's even!" Or (evenCheck(4.4) = evenCheck(5.5) And evenCheck(10.0) = evenCheck(Not 6))~
+Blink overOneHundred = Funk x -> If x <= 0 Then 0 Else If x > 100 Then x Else overOneHundred(2 * x) ~
+overOneHundred(7)~
+overOneHundred(1)~
+overOneHundred(75)~
+overOneHundred(101)~
+overOneHundred(Not 88)~

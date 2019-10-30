@@ -1,0 +1,55 @@
+"--Case Name: Big List Tests"~
+"--Author: Seth Fogarty"~
+"--Output:"~
+"--(I'm| (Afraid| (I| stump)))"~
+"--3"~
+"--0"~
+"--(4| (3| (2| (1| stump))))"~
+"--6"~
+"--0"~
+"--(3| (2| (1| (0| stump))))"~
+"--(I'm| (Afraid| (I| (Can't| (Let| stump)))))"~
+"--(3| (2| (1| (0| (I'm| (Afraid| (I| (Can't| (Let| stump)))))))))"~
+"--this should be an infinite list. will try taking the first ten elements"~
+"--(0| (0| (0| (0| (0| (0| (0| (0| (0| (0| stump))))))))))"~
+"--End Output:"~
+"--Defining some lists"~
+Conway lsta = (3 | (2 | (1 | (0 | Trunk)))) ~
+Conway lstb = ("I'm" | ("Afraid" | ("I" | ("Can't" | ("Let" | Trunk))))) ~
+Conway lstc = Trunk ~
+Conway lstd = (2.1 | (1.3 | (8.3 | (9 | Trunk)))) ~
+"--List punctions"~
+Conway inc = Funk x -> x + 1 ~
+Conway head = Funk lst -> lft(lst) ~
+Conway tail = Funk lst -> rgt(lst) ~
+Blink app = Funk lsta -> Funk lstb -> If lsta = Trunk Then lstb Else (head(lsta) | app(tail(lsta))(lstb)) ~
+Blink nth = Funk n -> Funk lst -> If n = 0 Then head(lst) Else nth(n - 1)(tail(lst)) ~
+Blink take = Funk n -> Funk lst -> If n = 0 Then Trunk Else (head(lst) | take(n - 1)(tail(lst))) ~
+Blink map = Funk f -> Funk lst -> If lst = Trunk Then Trunk Else (f(head(lst)) | map(f)(tail(lst))) ~
+Blink fold = Funk f -> Funk x -> Funk lst -> If lst = Trunk Then x Else f(head(lst))(fold(f)(x)(tail(lst))) ~
+"-- Testing higher-order list punctions."~
+"-- I'm afraid i"~
+take(3)(lstb)~
+"-- 3"~
+nth(0)(lsta)~
+"-- 0"~
+nth(3)(lsta)~
+"-- (4|3|2|1)"~
+map(inc)(lsta)~
+"-- 6"~
+fold(Funk x -> Funk y -> x + y)(0)(lsta)~
+"-- 0"~
+fold(Funk x -> Funk y -> x * y)(1)(lsta)~
+"-- (3|2|1|0)"~
+lsta~
+"-- (i'm|afraid|i|can't|let)"~
+lstb~
+"-- appending"~
+app(lsta)(lstb)~
+"this should be an infinite list. will try taking the first ten elements"~
+Blink inflist = (0 | inflist) ~
+take(10)(inflist)~
+"--Lets try to do that list of natural numbers. doesn't work for me| but if it does for you, let me know?"~
+Blink infinc = Funk lst -> (head(lst) + 1 | infinc(tail(lst))) ~
+Blink natnums = (1 | infinc(natnums)) ~
+take(10)(natnums)~

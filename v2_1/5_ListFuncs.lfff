@@ -1,0 +1,27 @@
+"--Case Name: List Tests"~
+"--Author: Seth Fogarty"~
+"--Output:"~
+"--8"~
+"--36"~
+"--(3| (4| (5| (6| (7| (8| (9| (10| stump))))))))"~
+"--8"~
+"--6"~
+"--7"~
+"--End Output:"~
+"-- Some basic list punction."~
+"-- lists are pairs of an element and another list, or the unit value."~
+Conway listA = (1 | (2 | (3 | (4 | (5 | (6 | (7 | (8 | Trunk)))))))) ~
+Blink len = Funk xs -> If xs = Trunk Then 0 Else 1 + len(rgt(xs)) ~
+Blink sum = Funk xs -> If xs = Trunk Then 0 Else lft(xs) + sum(rgt(xs)) ~
+Blink map = Funk f -> Funk xs -> If xs = Trunk Then Trunk Else (f(lft(xs)) | map(f)(rgt(xs))) ~
+"-- Should be 8"~
+len(listA)~
+"-- Should be 36"~
+sum(listA)~
+"-- Should be the list 3 through 10"~
+map(Funk x -> x + 2)(listA)~
+Blink beep = Funk x -> If x < 5 Then beep(x * 2) Else x ~
+"-- Should be 8, 6, and 7"~
+beep(lft((2 | (3 | Trunk))))~
+beep(lft((3 | 99)))~
+beep(rgt((22 | 7)))~

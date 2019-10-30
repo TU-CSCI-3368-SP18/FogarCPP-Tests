@@ -1,0 +1,36 @@
+"--Case Name: Trees Tests"~
+"--Author: Seth Fogarty"~
+"--Output:"~
+"--(Node| (8| ((Node| (5| ((Node| (2| ((Leaf| stump)| (Leaf| stump))))| (Node| (7| ((Leaf| stump)| (Leaf| stump)))))))| (Leaf| stump))))"~
+"--(Node| (5| ((Node| (2| ((Leaf| stump)| (Leaf| stump))))| (Node| (7| ((Leaf| stump)| (Leaf| stump)))))))"~
+"--8"~
+"--(Leaf| stump)"~
+"--22"~
+"--End Output:"~
+"-- Defining some trees. trees are a leaf with nothing, or a node with a value, a left child, and a right child"~
+Conway leaf = ("Leaf" | Trunk) ~
+Conway nodeA = ("Node" | (2 | (leaf | leaf))) ~
+Conway nodeB = ("Node" | (7 | (leaf | leaf))) ~
+Conway nodeC = ("Node" | (5 | (nodeA | nodeB))) ~
+Conway nodeD = ("Node" | (8 | (nodeC | leaf))) ~
+Conway comment = "Function to raise an error" ~
+Conway error = Funk x -> Alive < 3 ~
+Conway comment = "Function to get values and children of a node" ~
+Conway val = Funk tree -> If lft(tree) = "Leaf" Then error(0) Else lft(rgt(tree)) ~
+Conway left = Funk tree -> If lft(tree) = "Leaf" Then error(0) Else lft(rgt(rgt(tree))) ~
+Conway right = Funk tree -> If lft(tree) = "Leaf" Then error(0) Else rgt(rgt(rgt(tree))) ~
+"-- (node |(8|(( node |(5|(( node |(2|(( leaf |stump)|( leaf |stump))))|( node |(7|(( leaf |stump)|( leaf |stump)))))))|( leaf |stump))))"~
+nodeD~
+"-- Left child"~
+"-- (node |(5|(( node |(2|(( leaf |stump)|( leaf |stump))))|( node |(7|(( leaf |stump)|( leaf |stump)))))))"~
+left(nodeD)~
+"-- Value: 8"~
+val(nodeD)~
+"-- Right child"~
+"-- (leaf|stump)"~
+right(nodeD)~
+"-- Child of a leaf: should be an error"~
+"--right(leaf)?"~
+"-- Function to sum the elements of a tree: should be 22"~
+Blink sumTree = Funk tree -> If lft(tree) = "Leaf" Then 0 Else val(tree) + sumTree(left(tree)) + sumTree(right(tree)) ~
+sumTree(nodeD)~

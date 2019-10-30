@@ -1,0 +1,41 @@
+"--Case Name: Pairs Tests"~
+"--Author: Seth Fogarty"~
+"--Output:"~
+"--(3| 2)"~
+"--(3.2| Alive)"~
+"--(node| (stump| (5| stump)))"~
+"--(3| (2| (1| (Contact| stump))))"~
+"--Alive"~
+"--Alive"~
+"--Dead"~
+"--Dead"~
+"--Alive"~
+"--Alive"~
+"--Alive"~
+"--Alive"~
+"--Alive"~
+"--Alive"~
+"--Alive"~
+"--Alive"~
+"--End Output:"~
+(3 | 2)~
+(3.2 | Alive)~
+Conway leaf = Trunk ~
+Conway node = ("node" | (leaf | (5 | leaf))) ~
+node~
+Conway lst = (3 | (2 | (1 | ("Contact" | Trunk)))) ~
+lst~
+(3 | 2) = Cell x = 3 Near Cell y = 2 Near (x | y)~
+(Cell x = 3 Near x - 1 | 3) != (3 | 2)~
+(If Dead Then 2 Else 3 | 3) = If 3 = 2 Then (3 | 3) Else (4 | 4)~
+Conway x = (3 | 2) ~
+Conway y = (2 | 3) ~
+x = y~
+lft((3 | 2)) = 3~
+rgt((3 | 2)) = 2~
+lft((Alive | Dead))~
+rgt((Dead | Alive))~
+lft(x) = 3~
+rgt(x) = 2~
+lft(rgt(rgt(rgt(lst)))) = "Contact"~
+lft(rgt(node)) = leaf~

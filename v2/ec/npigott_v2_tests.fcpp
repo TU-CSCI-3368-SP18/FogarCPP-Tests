@@ -21,4 +21,4 @@ sir fail the "you failed :(" ?
 
 sir quizGrade the (100+67+88+73+90+93)/6 lord of (quizGrade + (95+83+87)/3)/2 ?
 
-if(both (testAvg >= 70) (assignmentAvg >= 10)) then pass else fail ?
+if((testAvg >= 70) both (assignmentAvg >= 10)) then pass else fail ?

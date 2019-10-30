@@ -1,0 +1,17 @@
+"--Case Name: String Tests"~
+"--Author: Seth Fogarty"~
+"--Output:"~
+"--This is a string."~
+"--Strings can be bound to variables."~
+"--Alive"~
+"--Alive"~
+"--Dead"~
+"--Dead"~
+"--End Output:"~
+"This is a string."~
+Cell x = "Strings can be bound to variables." Near x~
+Conway y = "Strings can be bound to variables." ~
+Cell x = "Strings can be bound to variables." Near x = y~
+If y = "foo" Then Dead Else Alive~
+Cell z = "Strings can be bound to local varaibles" Near z = y~
+"Strings can be bound to variables." != y~

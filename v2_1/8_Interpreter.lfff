@@ -1,0 +1,52 @@
+"--Case Name: interpreter"~
+"--Author: Seth Fogarty"~
+"--Output:"~
+"--(Add| ((Mult| ((Add| ((Int| 3)| (Int| 2)))| (Neg| (Int| 5))))| (Mult| ((Int| 5)| (Int| 5)))))"~
+"--(Mult| ((Add| ((Int| 3)| (Int| 2)))| (Neg| (Int| 5))))"~
+"--(Mult| ((Int| 5)| (Int| 5)))"~
+"--3"~
+"--5"~
+"---5"~
+"---25"~
+"--25"~
+"--0"~
+"--End Output:"~
+"-- Defining some abstract syntax trees. trees are a int with an integer| an add node with two subexpressions, a mult node with two subexpressions, or a neg node with one subexpression."~
+Conway v3 = ("Int" | 3) ~
+Conway v2 = ("Int" | 2) ~
+Conway v5 = ("Int" | 5) ~
+Conway nodeA = ("Add" | (v3 | v2)) ~
+Conway nodeB = ("Neg" | v5) ~
+Conway nodeC = ("Mult" | (nodeA | nodeB)) ~
+Conway nodeD = ("Mult" | (v5 | v5)) ~
+Conway nodeE = ("Add" | (nodeC | nodeD)) ~
+Conway comment = "Function to raise an error" ~
+Conway error = Funk x -> Alive < 3 ~
+Conway comment = "Function to get left and right subtrees for binary aST nodes" ~
+Conway left = Funk ast -> lft(rgt(ast)) ~
+Conway right = Funk ast -> rgt(rgt(ast)) ~
+"-- Should show:"~
+"-- (add |(( mult |(( add |(( int |3)|( int |2)))|( neg |( int |5))))|( mult |(( int |5)|( int |5)))))"~
+nodeE~
+"-- Left child"~
+"-- (mult |(( add |(( int |3)|( int |2)))|( neg |( int |5))))"~
+left(nodeE)~
+"-- Right child"~
+"-- ( mult |(( int |5)|( int |5)))"~
+right(nodeE)~
+Conway comment = "Function to evaluate an aST" ~
+Conway f = Funk x -> lft(x) ~
+Conway s = Funk x -> rgt(x) ~
+Blink eval = Funk t -> Cell l = f(t) Near If l = "Int" Then s(t) Else If l = "Neg" Then Not eval(s(t)) Else If l = "Mult" Then eval(left(t)) * eval(right(t)) Else If l = "Add" Then eval(left(t)) + eval(right(t)) Else error(Trunk) ~
+"-- 3"~
+eval(v3)~
+"-- 3+2"~
+eval(nodeA)~
+"-- -5"~
+eval(nodeB)~
+"-- (3+2)*-5"~
+eval(nodeC)~
+"-- 5*5"~
+eval(nodeD)~
+"-- 5*5+(3+2)*-5"~
+eval(nodeE)~

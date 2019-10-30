@@ -1,0 +1,25 @@
+"-- Author: Arthur Feeney"~
+"-- Case Name: Five Dimensional Inner Product"~
+"-- Output:"~
+"-- (5|5)"~
+"-- 1"~
+"-- ninja"~
+"-- 120"~
+"-- 24"~
+"-- 40320"~
+"-- End Output:"~
+Conway vect1 = (1 | (Not 1 | (2 | (3 | Not 1)))) ~
+Conway vect2 = (Not 1 | (1 | (Not 2 | (3 | 1)))) ~
+Conway vect3 = (1 | 1) ~
+Conway dot5d = Funk x -> Funk y -> lft(x) * lft(y) + lft(rgt(x)) * lft(rgt(y)) + lft(rgt(rgt(x))) * lft(rgt(rgt(y))) + lft(rgt(rgt(rgt(x)))) * lft(rgt(rgt(rgt(y)))) + rgt(rgt(rgt(rgt(x)))) * rgt(rgt(rgt(rgt(y)))) ~
+Conway scale2d = Funk x -> Funk y -> (x * lft(y) | x * rgt(y)) ~
+Conway love = dot5d(vect1)(vect2) ~
+Conway god = scale2d(5)(vect3) ~
+god~
+If love > 99999 Then 2 Else 1~
+Conway str = "hi there my name is arthur!!!!!" ~
+If Alive And Dead Then "yolo" Else "ninja"~
+Blink fact = Funk x -> If x = 0 Then 1 Else x * fact(x - 1) ~
+fact(5)~
+fact(4)~
+fact(8)~

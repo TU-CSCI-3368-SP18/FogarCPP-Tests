@@ -1,0 +1,9 @@
+"--Case Name : multiples of 7"~
+"--Author : Thoai Bui"~
+"--Output:"~
+"-- 1"~
+"--(8|11)"~
+Conway high = 96 ~
+Cell poor = (Funk up -> high + up)(3) Near 100 - poor~
+Conway fib = (1 | (1 | (2 | (3 | (5 | (8 | 11)))))) ~
+rgt(rgt(rgt(rgt(rgt(fib)))))~
